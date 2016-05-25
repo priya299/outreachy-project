@@ -1,0 +1,435 @@
+﻿#metrics-grimoire
+[2016-03-19 18:16:04] → Joined channel #metrics-grimoire
+[2016-03-19 18:16:11] * Channel mode is +cnt
+[2016-03-19 18:16:11] * Channel timestamp is 1349876710
+[2016-03-19 18:19:55] <priya_> hi
+[2016-03-19 18:24:15] <jgbarah> Hi, priya_
+[2016-03-19 18:43:54] ⇐ jgbarah quit (~jgb@128.152.220.87.dynamic.jazztel.es): Ping timeout: 260 seconds
+[2016-03-19 18:48:59] ⇐ gwmngilfen quit (~quassel@46.101.74.52): Ping timeout: 248 seconds
+[2016-03-19 18:50:07] → gwmngilfen joined (~quassel@46.101.74.52)
+[2016-03-19 20:00:00] → jgbarah joined (~jgb@128.152.220.87.dynamic.jazztel.es)
+[2016-03-19 21:39:17] ⇐ priya_ quit (uid136681@gateway/web/irccloud.com/x-uiogtgvuphmtwhaa): Quit: Connection closed for inactivity
+[2016-03-19 21:39:17] * Connection closed for inactivity
+[2016-03-19 21:39:17] * Socket closed
+[2016-03-22 14:35:45] → Joined channel #metrics-grimoire
+[2016-03-22 14:35:45] * Channel mode is +cnt
+[2016-03-22 14:35:45] * Channel timestamp is 1349876710
+[2016-03-22 14:59:24] ⇐ jgbarah quit (~jgb@128.152.220.87.dynamic.jazztel.es): Ping timeout: 244 seconds
+[2016-03-22 15:11:19] → dizquierdo joined (~dizquierd@pct-empresas-150.uc3m.es)
+[2016-03-22 15:49:03] → jgbarah joined (~jgb@128.152.220.87.dynamic.jazztel.es)
+[2016-03-22 15:54:25] ⇐ jgbarah quit (~jgb@128.152.220.87.dynamic.jazztel.es): Quit: Leaving.
+[2016-03-22 15:54:29] → jgbarah1 joined (~jgb@128.152.220.87.dynamic.jazztel.es)
+[2016-03-22 15:57:48] ⇐ DawnFoster1 quit (~DawnFoste@cpc22-lewi17-2-0-cust673.2-4.cable.virginm.net): Quit: Leaving.
+[2016-03-22 15:59:34] ⇐ jgbarah1 quit (~jgb@128.152.220.87.dynamic.jazztel.es): Ping timeout: 260 seconds
+[2016-03-22 15:59:52] → DawnFoster joined (~DawnFoste@cpc22-lewi17-2-0-cust673.2-4.cable.virginm.net)
+[2016-03-22 16:46:05] → jgbarah joined (~jgb@wifi-78-174.uc3m.es)
+[2016-03-22 16:53:59] ⇐ jsmanrique quit (uid42680@gateway/web/irccloud.com/x-hkvqpfsidlgaycbq): 
+[2016-03-22 17:31:43] ⇐ lars_kurth_ quit (~Lars@xenbits.xenproject.org): Remote host closed the connection
+[2016-03-22 17:32:32] → lars_kurth joined (~Lars@xenbits.xenproject.org)
+[2016-03-22 17:35:56] ⇐ jgbarah quit (~jgb@wifi-78-174.uc3m.es): Ping timeout: 268 seconds
+[2016-03-22 17:56:28] → jgbarah joined (~jgb@128.152.220.87.dynamic.jazztel.es)
+[2016-03-22 18:01:33] ⇐ jgbarah quit (~jgb@128.152.220.87.dynamic.jazztel.es): Ping timeout: 250 seconds
+[2016-03-22 18:13:09] ⇐ dizquierdo quit (~dizquierd@pct-empresas-150.uc3m.es): Ping timeout: 260 seconds
+[2016-03-22 18:39:10] ⇐ DawnFoster quit (~DawnFoste@cpc22-lewi17-2-0-cust673.2-4.cable.virginm.net): Quit: Leaving.
+[2016-03-22 18:47:09] → jgbarah joined (~jgb@128.152.220.87.dynamic.jazztel.es)
+[2016-03-22 19:17:15] → DawnFoster joined (~DawnFoste@193.60.79.171)
+[2016-03-22 19:23:55] ⇐ jgbarah quit (~jgb@128.152.220.87.dynamic.jazztel.es): Read error: Connection reset by peer
+[2016-03-22 19:24:47] → jgbarah joined (~jgb@212.153.220.87.dynamic.jazztel.es)
+[2016-03-22 19:31:03] ⇐ jgbarah quit (~jgb@212.153.220.87.dynamic.jazztel.es): Ping timeout: 240 seconds
+[2016-03-22 20:00:33] ⇐ DawnFoster quit (~DawnFoste@193.60.79.171): Quit: Leaving.
+[2016-03-22 20:03:19] → DawnFoster joined (~DawnFoste@193.60.79.171)
+[2016-03-22 20:19:00] → dizquierdo joined (~dizquierd@89.130.248.153)
+[2016-03-22 20:20:31] → jsmanrique joined (uid42680@gateway/web/irccloud.com/x-hgfdulvtoadwikau)
+[2016-03-22 20:29:54] → jgbarah joined (~jgb@212.153.220.87.dynamic.jazztel.es)
+[2016-03-22 20:52:26] ⇐ jsmanrique quit (uid42680@gateway/web/irccloud.com/x-hgfdulvtoadwikau): 
+[2016-03-22 20:56:07] ⇐ jgbarah quit (~jgb@212.153.220.87.dynamic.jazztel.es): Ping timeout: 260 seconds
+[2016-03-22 20:57:54] ⇐ tonythomas quit (uid25971@wikimedia/-01tonythomas): Quit: Connection closed for inactivity
+[2016-03-22 21:02:08] → DawnFoster1 joined (~DawnFoste@94.119.65.74)
+[2016-03-22 21:02:12] ⇐ DawnFoster1 quit (~DawnFoste@94.119.65.74): Client Quit
+[2016-03-22 21:05:36] ⇐ DawnFoster quit (~DawnFoste@193.60.79.171): Ping timeout: 276 seconds
+[2016-03-22 21:09:49] → jgbarah joined (~jgb@66.254.78.188.dynamic.jazztel.es)
+[2016-03-22 21:55:04] ⇐ jgbarah quit (~jgb@66.254.78.188.dynamic.jazztel.es): Ping timeout: 240 seconds
+[2016-03-22 21:59:17] ⇐ priya_ quit (uid136681@gateway/web/irccloud.com/x-rzftcjhdgjskxmdi): Quit: Connection closed for inactivity
+[2016-03-22 21:59:17] * Connection closed for inactivity
+[2016-03-22 21:59:17] * Socket closed
+[2016-03-23 10:04:59] → Joined channel #metrics-grimoire
+[2016-03-23 10:04:59] * Channel mode is +cnt
+[2016-03-23 10:04:59] * Channel timestamp is 1349876710
+[2016-03-23 10:55:24] → tonythomas joined (uid25971@wikimedia/-01tonythomas)
+[2016-03-23 12:25:19] <priya_> hello
+[2016-03-23 12:25:51] <priya_> how can i get mbox mails? 
+[2016-03-23 13:16:51] → dizquierdo joined (~dizquierd@92.177.22.54)
+[2016-03-23 13:33:50] → _acs_ joined (~acs@90.161.42.28)
+[2016-03-23 13:50:33] → jgbarah joined (~jgb@wifi-78-174.uc3m.es)
+[2016-03-23 13:50:46] ⇐ _acs_ quit (~acs@90.161.42.28): Ping timeout: 268 seconds
+[2016-03-23 13:53:23] ⇐ dizquierdo quit (~dizquierd@92.177.22.54): Quit: Leaving
+[2016-03-23 14:25:47] ⇐ jgbarah quit (~jgb@wifi-78-174.uc3m.es): Ping timeout: 244 seconds
+[2016-03-23 14:26:38] → jgbarah joined (~jgb@wifi-78-174.uc3m.es)
+[2016-03-23 14:27:47] → dizquierdo joined (~dizquierd@pct-empresas-150.uc3m.es)
+[2016-03-23 14:49:17] ⇐ priya_ quit (uid136681@gateway/web/irccloud.com/x-uxnkjplcemzekkgl): Quit: Connection closed for inactivity
+[2016-03-23 14:49:17] * Connection closed for inactivity
+[2016-03-23 14:49:17] * Socket closed
+[2016-03-23 15:39:29] → Joined channel #metrics-grimoire
+[2016-03-23 15:39:30] * Channel mode is +cnt
+[2016-03-23 15:39:30] * Channel timestamp is 1349876710
+[2016-03-23 15:48:44] → jsmanrique joined (uid42680@gateway/web/irccloud.com/x-jyxlhvajszgfruyj)
+[2016-03-23 16:19:54] <jgbarah> lars_kurth: Hi Lars
+[2016-03-23 16:19:59] <jgbarah> are you there?
+[2016-03-23 16:24:13] <jgbarah> lars_kurth: Don't bother to answer, you have an email in your mbox ;-) (related to Outreachy)
+[2016-03-23 17:20:55] ⇐ jgbarah quit (~jgb@wifi-78-174.uc3m.es): Ping timeout: 244 seconds
+[2016-03-23 17:40:04] → jgbarah joined (~jgb@wifi-78-174.uc3m.es)
+[2016-03-23 18:05:57] ⇐ dizquierdo quit (~dizquierd@pct-empresas-150.uc3m.es): Ping timeout: 276 seconds
+[2016-03-23 18:14:17] ⇐ jsmanrique quit (uid42680@gateway/web/irccloud.com/x-jyxlhvajszgfruyj): 
+[2016-03-23 18:21:42] ⇐ jgbarah quit (~jgb@wifi-78-174.uc3m.es): Ping timeout: 248 seconds
+[2016-03-23 20:15:42] → dizquierdo joined (~dizquierd@92.177.22.54)
+[2016-03-23 20:31:22] * dizquierdo is now known as dizquierdo_afk
+[2016-03-23 21:09:17] ⇐ priya_ quit (uid136681@gateway/web/irccloud.com/x-qvwyaproxcssryhm): Quit: Connection closed for inactivity
+[2016-03-23 21:09:17] * Connection closed for inactivity
+[2016-03-23 21:09:17] * Socket closed
+[2016-03-24 10:50:35] → Joined channel #metrics-grimoire
+[2016-03-24 10:50:36] * Channel mode is +cnt
+[2016-03-24 10:50:36] * Channel timestamp is 1349876710
+[2016-03-24 11:11:15] → tonythomas joined (uid25971@wikimedia/-01tonythomas)
+[2016-03-24 12:54:57] → _acs_ joined (~acs@90.161.42.28)
+[2016-03-24 13:06:23] ⇐ _acs_ quit (~acs@90.161.42.28): Ping timeout: 250 seconds
+[2016-03-24 13:43:14] → _acs_ joined (~acs@90.161.42.28)
+[2016-03-24 13:54:35] ⇐ _acs_ quit (~acs@90.161.42.28): Ping timeout: 248 seconds
+[2016-03-24 14:09:18] ⇐ priya_ quit (uid136681@gateway/web/irccloud.com/x-ztjeyzkbsejsbcnk): Quit: Connection closed for inactivity
+[2016-03-24 14:09:18] * Connection closed for inactivity
+[2016-03-24 14:09:18] * Socket closed
+[2016-03-24 14:53:49] → Joined channel #metrics-grimoire
+[2016-03-24 14:53:49] * Channel mode is +cnt
+[2016-03-24 14:53:49] * Channel timestamp is 1349876710
+[2016-03-24 15:17:15] ⇐ lars_kurth quit (~Lars@xenbits.xenproject.org): Ping timeout: 246 seconds
+[2016-03-24 15:22:49] <priya_> hello
+[2016-03-24 15:27:15] → jgbarah joined (~jgb@251.150.220.87.dynamic.jazztel.es)
+[2016-03-24 15:57:54] ⇐ tonythomas quit (uid25971@wikimedia/-01tonythomas): Quit: Connection closed for inactivity
+[2016-03-24 16:19:06] ⇐ jgbarah quit (~jgb@251.150.220.87.dynamic.jazztel.es): Ping timeout: 276 seconds
+[2016-03-24 16:40:09] → brylie joined (~brylie@syi-fgw3-443.syi.inet.fi)
+[2016-03-24 16:55:18] → jgbarah joined (~jgb@251.150.220.87.dynamic.jazztel.es)
+[2016-03-24 16:55:44] → tonythomas joined (uid25971@wikimedia/-01tonythomas)
+[2016-03-24 17:19:23] ⇐ jgbarah quit (~jgb@251.150.220.87.dynamic.jazztel.es): Ping timeout: 248 seconds
+[2016-03-24 18:27:26] <priya_> hello
+[2016-03-24 18:29:28] <priya_> Lars,  I tried to fetch mbox files using  perceval mbox  "http://lists.xenproject.org" /archives/html/mbox/  this command. And I got it as 0/0 messages fetched
+[2016-03-24 18:30:24] <priya_> should I have to give password? If so, can u provide me the log-in credentials?
+[2016-03-24 18:30:48] ← tonythomas left (uid25971@wikimedia/-01tonythomas)
+[2016-03-24 19:03:48] ⇐ brylie quit (~brylie@syi-fgw3-443.syi.inet.fi): Quit: Leaving
+[2016-03-24 20:43:16] ⇐ paulsherwood quit (~paulsherw@185.98.148.236): *.net *.split
+[2016-03-24 20:59:41] → paulsherwood joined (~paulsherw@185.98.148.236)
+[2016-03-24 21:46:51] → lars_kurth_ joined (~Lars@xenbits.xenproject.org)
+[2016-03-24 21:49:18] ⇐ priya_ quit (uid136681@gateway/web/irccloud.com/x-hpofckvsljpwupfj): Quit: Connection closed for inactivity
+[2016-03-24 21:49:18] * Connection closed for inactivity
+[2016-03-24 21:49:18] * Socket closed
+[2016-04-05 13:02:46] → Joined channel #metrics-grimoire
+[2016-04-05 13:02:47] * Channel mode is +cnt
+[2016-04-05 13:02:47] * Channel timestamp is 1349876710
+[2016-04-05 13:15:54] → jgbarah joined (~jgb@193.147.77.22)
+[2016-04-05 13:26:49] → dizquierdo joined (~dizquierd@92.177.22.54)
+[2016-04-05 13:56:49] ⇐ jgbarah quit (~jgb@193.147.77.22): Ping timeout: 252 seconds
+[2016-04-05 14:15:04] → jgbarah joined (~jgb@193.147.77.22)
+[2016-04-05 14:26:02] → here_and_there joined (~ivaylo@193.54.153.155)
+[2016-04-05 14:26:39] ⇐ jgbarah quit (~jgb@193.147.77.22): Ping timeout: 244 seconds
+[2016-04-05 15:34:53] → jgbarah joined (~jgb@193.147.77.16)
+[2016-04-05 15:56:17] ⇐ jgbarah quit (~jgb@193.147.77.16): Ping timeout: 250 seconds
+[2016-04-05 15:57:32] → jgbarah joined (~jgb@193.147.77.16)
+[2016-04-05 16:33:24] ⇐ jgbarah quit (~jgb@193.147.77.16): Ping timeout: 260 seconds
+[2016-04-05 16:38:25] → jgbarah joined (~jgb@193.147.77.16)
+[2016-04-05 16:45:13] ⇐ _acs_ quit (~acs@32.red-88-10-248.dynamicip.rima-tde.net): Quit: Leaving.
+[2016-04-05 16:52:03] ⇐ jgbarah quit (~jgb@193.147.77.16): Ping timeout: 264 seconds
+[2016-04-05 17:18:29] → jgbarah joined (~jgb@193.147.77.16)
+[2016-04-05 17:24:54] ⇐ jgbarah quit (~jgb@193.147.77.16): Ping timeout: 268 seconds
+[2016-04-05 17:28:09] → _acs_ joined (~acs@32.Red-88-10-248.dynamicIP.rima-tde.net)
+[2016-04-05 17:55:17] ⇐ dizquierdo quit (~dizquierd@92.177.22.54): Ping timeout: 260 seconds
+[2016-04-05 18:52:04] ⇐ qgil quit (~qgil@mediawiki/Qgil-WMF): *.net *.split
+[2016-04-05 19:00:35] → qgil joined (~qgil@mediawiki/Qgil-WMF)
+[2016-04-05 19:18:10] → dizquierdo joined (~dizquierd@89.130.248.153)
+[2016-04-05 19:57:35] ⇐ qgil quit (~qgil@mediawiki/Qgil-WMF): Remote host closed the connection
+[2016-04-05 20:30:19] ⇐ _acs_ quit (~acs@32.Red-88-10-248.dynamicIP.rima-tde.net): Ping timeout: 248 seconds
+[2016-04-05 21:10:36] ⇐ dizquierdo quit (~dizquierd@89.130.248.153): Ping timeout: 268 seconds
+[2016-04-05 21:12:04] → jgbarah joined (~jgb@251.150.220.87.dynamic.jazztel.es)
+[2016-04-05 21:18:19] ⇐ here_and_there quit (~ivaylo@193.54.153.155): Ping timeout: 248 seconds
+[2016-04-05 21:21:43] ⇐ jgbarah quit (~jgb@251.150.220.87.dynamic.jazztel.es): Ping timeout: 250 seconds
+[2016-04-05 21:29:24] ⇐ priya_ quit (uid136681@gateway/web/irccloud.com/x-fkuzjkzpmviuqmjc): Quit: Connection closed for inactivity
+[2016-04-05 21:29:24] * Connection closed for inactivity
+[2016-04-05 21:29:24] * Socket closed
+[2016-04-06 14:27:00] → Joined channel #metrics-grimoire
+[2016-04-06 14:27:01] * Channel mode is +cnt
+[2016-04-06 14:27:01] * Channel timestamp is 1349876710
+[2016-04-06 14:41:13] → dizquierdo joined (~dizquierd@pct-empresas-133.uc3m.es)
+[2016-04-06 14:42:11] → _acs_ joined (~acs@pct-empresas-191.uc3m.es)
+[2016-04-06 14:50:58] → jgbarah joined (~jgb@wifi-75-225.uc3m.es)
+[2016-04-06 14:53:32] ⇐ jsmanrique quit (uid42680@gateway/web/irccloud.com/x-oeguiqmrqxgkulrs): 
+[2016-04-06 15:27:28] ⇐ jgbarah quit (~jgb@wifi-75-225.uc3m.es): Ping timeout: 252 seconds
+[2016-04-06 15:36:53] ⇐ _acs_ quit (~acs@pct-empresas-191.uc3m.es): Ping timeout: 244 seconds
+[2016-04-06 15:41:44] ⇐ dizquierdo quit (~dizquierd@pct-empresas-133.uc3m.es): Ping timeout: 260 seconds
+[2016-04-06 15:53:27] → _acs_ joined (~acs@2001:720:410:3343:ec3e:d920:fc5d:55fa)
+[2016-04-06 15:57:56] → dizquierdo joined (~dizquierd@pct-empresas-133.uc3m.es)
+[2016-04-06 15:58:22] ⇐ dizquierdo quit (~dizquierd@pct-empresas-133.uc3m.es): Remote host closed the connection
+[2016-04-06 16:35:34] ⇐ _acs_ quit (~acs@2001:720:410:3343:ec3e:d920:fc5d:55fa): Ping timeout: 248 seconds
+[2016-04-06 17:25:53] → _acs_ joined (~acs@32.Red-88-10-248.dynamicIP.rima-tde.net)
+[2016-04-06 17:49:20] → jgbarah joined (~jgb@163.117.202.133)
+[2016-04-06 18:01:58] → gpoo joined (~gpoo@201.187.37.177)
+[2016-04-06 18:04:07] ⇐ jgbarah quit (~jgb@163.117.202.133): Ping timeout: 244 seconds
+[2016-04-06 18:11:02] → jgbarah joined (~jgb@pct-empresas-133.uc3m.es)
+[2016-04-06 18:41:27] ⇐ jgbarah quit (~jgb@pct-empresas-133.uc3m.es): Ping timeout: 276 seconds
+[2016-04-06 18:51:07] ⇐ _acs_ quit (~acs@32.Red-88-10-248.dynamicIP.rima-tde.net): Ping timeout: 248 seconds
+[2016-04-06 19:27:50] → jsmanrique joined (uid42680@gateway/web/irccloud.com/x-ieiyvapuitbpohve)
+[2016-04-06 19:29:23] ⇐ gpoo quit (~gpoo@201.187.37.177): Quit: Trans-Galego Express
+[2016-04-06 19:39:24] ⇐ priya_ quit (uid136681@gateway/web/irccloud.com/x-ayxjtlxpyjaekpqu): Quit: Connection closed for inactivity
+[2016-04-06 19:39:24] * Connection closed for inactivity
+[2016-04-06 19:39:24] * Socket closed
+[2016-04-08 18:11:13] → Joined channel #metrics-grimoire
+[2016-04-08 18:11:13] * Channel mode is +cnt
+[2016-04-08 18:11:14] * Channel timestamp is 1349876710
+[2016-04-08 18:47:51] ⇐ jgbarah quit (~jgb@wifi-217-220.uc3m.es): Ping timeout: 246 seconds
+[2016-04-08 19:57:19] → dizquierdo joined (~dizquierd@92.177.22.54)
+[2016-04-08 21:03:51] → _acs_ joined (~acs@32.Red-88-10-248.dynamicIP.rima-tde.net)
+[2016-04-08 21:59:25] ⇐ priya_ quit (uid136681@gateway/web/irccloud.com/x-cfrhdtzabwwcpbpt): Quit: Connection closed for inactivity
+[2016-04-08 21:59:25] * Connection closed for inactivity
+[2016-04-08 21:59:25] * Socket closed
+[2016-04-14 20:05:25] → Joined channel #metrics-grimoire
+[2016-04-14 20:05:25] * Channel mode is +cnt
+[2016-04-14 20:05:25] * Channel timestamp is 1349876710
+[2016-04-14 20:48:30] → sergeyb joined (~sergeyb@swsoft-msk-nat.sw.ru)
+[2016-04-14 21:54:03] → jgbarah joined (~jgb@251.150.220.87.dynamic.jazztel.es)
+[2016-04-14 22:04:32] ⇐ dizquierdo quit (~dizquierd@89.130.248.153): Ping timeout: 244 seconds
+[2016-04-14 22:17:55] → dizquierdo joined (~dizquierd@31.4.176.23)
+[2016-04-14 22:35:40] ⇐ dizquierdo quit (~dizquierd@31.4.176.23): Ping timeout: 252 seconds
+[2016-04-14 22:49:02] → dizquierdo joined (~dizquierd@89.130.248.153)
+[2016-04-14 23:03:41] ⇐ sergeyb quit (~sergeyb@swsoft-msk-nat.sw.ru): Quit: leaving
+[2016-04-14 23:05:49] ⇐ dizquierdo quit (~dizquierd@89.130.248.153): Quit: Leaving
+[2016-04-14 23:19:29] ⇐ priya_ quit (uid136681@gateway/web/irccloud.com/x-bxmbhgfaaktjtqhq): Quit: Connection closed for inactivity
+[2016-04-14 23:19:29] * Connection closed for inactivity
+[2016-04-14 23:19:29] * Socket closed
+[2016-04-24 13:30:40] → Joined channel #metrics-grimoire
+[2016-04-24 13:30:40] * Channel mode is +cnt
+[2016-04-24 13:30:40] * Channel timestamp is 1349876710
+[2016-04-24 17:01:12] → jgbarah joined (~jgb@251.202.78.188.dynamic.jazztel.es)
+[2016-04-24 17:52:39] ⇐ jgbarah quit (~jgb@251.202.78.188.dynamic.jazztel.es): Ping timeout: 250 seconds
+[2016-04-24 18:07:04] → jgbarah joined (~jgb@251.202.78.188.dynamic.jazztel.es)
+[2016-04-24 18:14:51] ⇐ jgbarah quit (~jgb@251.202.78.188.dynamic.jazztel.es): Ping timeout: 276 seconds
+[2016-04-24 18:29:34] ⇐ priya_ quit (uid136681@gateway/web/irccloud.com/x-ifcdzxoueqalohvs): Quit: Connection closed for inactivity
+[2016-04-24 18:29:34] * Connection closed for inactivity
+[2016-04-24 18:29:34] * Socket closed
+[2016-04-25 14:56:01] → Joined channel #metrics-grimoire
+[2016-04-25 14:56:02] * Channel mode is +cnt
+[2016-04-25 14:56:02] * Channel timestamp is 1349876710
+[2016-04-25 15:14:57] ⇐ DawnFoster quit (~DawnFoste@cpc22-lewi17-2-0-cust673.2-4.cable.virginm.net): Quit: Leaving.
+[2016-04-25 16:07:53] → dizquierdo joined (~dizquierd@rrcs-97-77-98-130.sw.biz.rr.com)
+[2016-04-25 16:09:13] → jgbarah joined (~jgb@193.147.77.23)
+[2016-04-25 16:31:54] ⇐ jgbarah quit (~jgb@193.147.77.23): Ping timeout: 276 seconds
+[2016-04-25 16:39:31] ⇐ _acs_ quit (~acs@pct-empresas-191.uc3m.es): Ping timeout: 244 seconds
+[2016-04-25 17:10:20] → DawnFoster joined (~DawnFoste@cpc22-lewi17-2-0-cust673.2-4.cable.virginm.net)
+[2016-04-25 17:26:28] ⇐ dizquierdo quit (~dizquierd@rrcs-97-77-98-130.sw.biz.rr.com): Quit: Leaving
+[2016-04-25 17:36:02] → _acs_ joined (~acs@32.red-88-10-248.dynamicip.rima-tde.net)
+[2016-04-25 17:36:20] ⇐ _acs_ quit (~acs@32.red-88-10-248.dynamicip.rima-tde.net): Remote host closed the connection
+[2016-04-25 17:37:55] → _acs_ joined (~acs@32.red-88-10-248.dynamicip.rima-tde.net)
+[2016-04-25 17:59:35] * Connection closed for inactivity
+[2016-04-25 17:59:35] * Socket closed
+[2016-04-27 16:28:04] → Joined channel #metrics-grimoire
+[2016-04-27 16:28:04] * Channel mode is +cnt
+[2016-04-27 16:28:04] * Channel timestamp is 1349876710
+[2016-04-27 16:34:14] ⇐ jgbarah quit (~jgb@wifi-78-98.uc3m.es): Ping timeout: 244 seconds
+[2016-04-27 16:40:41] ⇐ _acs_ quit (~acs@2001:720:410:3343:8803:8d19:83b5:7f60): Ping timeout: 276 seconds
+[2016-04-27 16:50:39] → DawnFoster joined (~DawnFoste@46.189.28.184)
+[2016-04-27 17:02:13] → gpoo joined (~gpoo@201.187.37.177)
+[2016-04-27 17:38:13] → _acs_ joined (~acs@32.red-88-10-248.dynamicip.rima-tde.net)
+[2016-04-27 17:40:39] → DawnFoster1 joined (~DawnFoste@46.189.28.43)
+[2016-04-27 17:43:02] ⇐ DawnFoster1 quit (~DawnFoste@46.189.28.43): Client Quit
+[2016-04-27 17:44:03] ⇐ DawnFoster quit (~DawnFoste@46.189.28.184): Ping timeout: 240 seconds
+[2016-04-27 17:58:59] → DawnFoster joined (~DawnFoste@46.189.28.218)
+[2016-04-27 18:03:07] ⇐ DawnFoster quit (~DawnFoste@46.189.28.218): Client Quit
+[2016-04-27 18:10:26] → jgbarah joined (~jgb@2001:720:410:3343:3668:95ff:feed:fcd1)
+[2016-04-27 18:21:26] ⇐ jgbarah quit (~jgb@2001:720:410:3343:3668:95ff:feed:fcd1): Ping timeout: 276 seconds
+[2016-04-27 19:12:17] ⇐ qgil quit (~qgil@mediawiki/Qgil-WMF): Ping timeout: 250 seconds
+[2016-04-27 20:12:53] → jgbarah joined (~jgb@251.202.78.188.dynamic.jazztel.es)
+[2016-04-27 20:13:21] ⇐ ChanServ quit (ChanServ@services.): *.net *.split
+[2016-04-27 20:25:06] → ChanServ joined (ChanServ@services.)
+[2016-04-27 20:25:06] * leguin.freenode.net set +o ChanServ
+[2016-04-27 20:39:36] ⇐ priya_ quit (uid136681@gateway/web/irccloud.com/x-ufywqhhuxctkqjzm): Quit: Connection closed for inactivity
+[2016-04-27 20:39:36] * Connection closed for inactivity
+[2016-04-27 20:39:36] * Socket closed
+[2016-05-02 15:29:52] → Joined channel #metrics-grimoire
+[2016-05-02 15:29:53] * Channel mode is +cnt
+[2016-05-02 15:29:53] * Channel timestamp is 1349876710
+[2016-05-02 16:07:21] ⇐ qgil quit (~qgil@mediawiki/Qgil-WMF): Ping timeout: 276 seconds
+[2016-05-02 16:43:54] ⇐ jgbarah quit (~jgb@251.202.78.188.dynamic.jazztel.es): Ping timeout: 250 seconds
+[2016-05-02 17:11:51] → jgbarah joined (~jgb@251.202.78.188.dynamic.jazztel.es)
+[2016-05-02 17:27:20] → qgil joined (~qgil@mediawiki/Qgil-WMF)
+[2016-05-02 17:28:34] ⇐ jgbarah quit (~jgb@251.202.78.188.dynamic.jazztel.es): Ping timeout: 240 seconds
+[2016-05-02 20:32:11] → gpoo joined (~gpoo@201.187.37.177)
+[2016-05-02 20:50:21] → dangers joined (~danger@cce02cs4035-fa12-z.ams.hpecore.net)
+[2016-05-02 20:51:42] ⇐ dangers_` quit (~danger@cce02cs4035-fa12-z.ams.hpecore.net): Remote host closed the connection
+[2016-05-02 21:19:21] → jgbarah joined (~jgb@251.202.78.188.dynamic.jazztel.es)
+[2016-05-02 21:39:38] ⇐ priya_ quit (uid136681@gateway/web/irccloud.com/x-lmgwmxwntluhjice): Quit: Connection closed for inactivity
+[2016-05-02 21:39:38] * Connection closed for inactivity
+[2016-05-02 21:39:38] * Socket closed
+[2016-05-03 13:31:24] → Joined channel #metrics-grimoire
+[2016-05-03 13:31:30] ⇐ jgbarah quit (~jgb@193.147.77.23): Ping timeout: 246 seconds
+[2016-05-03 13:34:43] ⇐ priya_ quit (uid136681@gateway/web/irccloud.com/x-dcyhpxmeowxahbse): Client Quit
+[2016-05-07 15:25:23] → Joined channel #metrics-grimoire
+[2016-05-07 15:25:23] * Channel mode is +cnt
+[2016-05-07 15:25:23] * Channel timestamp is 1349876710
+[2016-05-07 16:42:57] → jgbarah joined (~jgb@202.251.78.188.dynamic.jazztel.es)
+[2016-05-07 17:09:23] ⇐ jgbarah quit (~jgb@202.251.78.188.dynamic.jazztel.es): Ping timeout: 276 seconds
+[2016-05-07 19:59:41] ⇐ priya_ quit (uid136681@gateway/web/irccloud.com/x-wfednfmkcccjjxpm): Quit: Connection closed for inactivity
+[2016-05-07 19:59:41] * Connection closed for inactivity
+[2016-05-07 19:59:41] * Socket closed
+[2016-05-17 22:31:52] → Joined channel #metrics-grimoire
+[2016-05-17 22:31:52] * Channel mode is +cnt
+[2016-05-17 22:31:52] * Channel timestamp is 1349876710
+[2016-05-17 22:37:27] ⇐ jgbarah quit (~jgb@2605:b400:104:11:3668:95ff:feed:fcd1): Ping timeout: 250 seconds
+[2016-05-18 01:44:25] → jgbarah joined (~jgb@2605:b400:104:11:3668:95ff:feed:fcd1)
+[2016-05-18 02:25:35] ⇐ jgbarah quit (~jgb@2605:b400:104:11:3668:95ff:feed:fcd1): Ping timeout: 260 seconds
+[2016-05-18 02:36:12] → jgbarah joined (~jgb@207.91.176.135)
+[2016-05-18 02:48:55] ⇐ jgbarah quit (~jgb@207.91.176.135): Ping timeout: 260 seconds
+[2016-05-18 02:49:46] ⇐ priya_ quit (uid136681@gateway/web/irccloud.com/x-hcemloajwcxyzxfg): Quit: Connection closed for inactivity
+[2016-05-18 02:49:46] * Connection closed for inactivity
+[2016-05-18 02:49:46] * Socket closed
+[2016-05-23 23:13:23] → Joined channel #metrics-grimoire
+[2016-05-23 23:13:23] * Channel mode is +cnt
+[2016-05-23 23:13:23] * Channel timestamp is 1349876710
+[2016-05-24 02:27:22] → jgbarah joined (~jgb@176.149.220.87.dynamic.jazztel.es)
+[2016-05-24 03:03:54] ⇐ _acs_ quit (~acs@253.red-83-39-97.dynamicip.rima-tde.net): Quit: Leaving.
+[2016-05-24 03:32:16] → dizquierdo joined (~dizquierd@92.177.22.54)
+[2016-05-24 03:34:32] ⇐ dizquierdo quit (~dizquierd@92.177.22.54): Client Quit
+[2016-05-24 03:45:15] ⇐ qgil quit (~qgil@mediawiki/Qgil-WMF): Ping timeout: 260 seconds
+[2016-05-24 05:34:00] ⇐ jgbarah quit (~jgb@176.149.220.87.dynamic.jazztel.es): Ping timeout: 276 seconds
+[2016-05-24 09:26:42] → _acs_ joined (~acs@253.red-83-39-97.dynamicip.rima-tde.net)
+[2016-05-24 10:04:04] ⇐ _acs_ quit (~acs@253.red-83-39-97.dynamicip.rima-tde.net): Read error: Connection reset by peer
+[2016-05-24 10:04:13] → _acs_ joined (~acs@253.red-83-39-97.dynamicip.rima-tde.net)
+[2016-05-24 11:03:01] → qgil joined (~qgil@mediawiki/Qgil-WMF)
+[2016-05-24 14:31:22] → jgbarah joined (~jgb@193.147.77.23)
+[2016-05-24 14:37:10] ⇐ _acs_ quit (~acs@253.red-83-39-97.dynamicip.rima-tde.net): Read error: Connection reset by peer
+[2016-05-24 14:46:53] → dizquierdo joined (~dizquierd@92.177.22.54)
+[2016-05-24 14:49:18] <jgbarah> Hi, priya_
+[2016-05-24 14:49:38] <jgbarah> I'm still busy, but will try to show up here in 10 min.
+[2016-05-24 14:49:49] <jgbarah> Short meeting today, I know you're busy too.
+[2016-05-24 14:54:35] <priya_> ok jesus.. I'll wait
+[2016-05-24 14:58:39] ⇐ jgbarah quit (~jgb@193.147.77.23): Ping timeout: 246 seconds
+[2016-05-24 15:05:22] → jgbarah joined (~jgb@193.147.77.23)
+[2016-05-24 15:05:27] <jgbarah> Hi, priya_ , here I'm back
+[2016-05-24 15:05:42] <priya_> hi jesus
+[2016-05-24 15:06:15] <jgbarah> BTW, if you use my screen name (jgbarah) when you write, I will hear an alarm, and can come to the channeñ
+[2016-05-24 15:06:38] <jgbarah> That´ s why I'm using priya_ instead of Priya, just in case you have it configured that way too ;-)
+[2016-05-24 15:06:47] <priya_> ok jgbarah :)
+[2016-05-24 15:06:50] <jgbarah> I know you're a bit in a hurry, so let's go
+[2016-05-24 15:06:51] <jgbarah> ;-)
+[2016-05-24 15:07:00] <jgbarah> I guess you were with the tests, right?
+[2016-05-24 15:07:17] <priya_> No its ok... Till 4 I'm free :)
+[2016-05-24 15:07:25] <jgbarah> ok
+[2016-05-24 15:07:31] <priya_> yes... with the tests part
+[2016-05-24 15:08:10] <jgbarah> You're working with the unnittest package?
+[2016-05-24 15:08:13] <jgbarah> Any problem?
+[2016-05-24 15:08:48] <priya_> small problems happening... no I'll finish it off soon... in between my system got crashed... but now its ok
+[2016-05-24 15:09:36] <priya_> I'll complete it soon.... If getting stuck with some other major issues, will let you know... I guess I can complete it
+[2016-05-24 15:10:13] <jgbarah> ok. Just in case, maybe you can enjoy reading http://docs.python-guide.org/en/latest/writing/tests/
+[2016-05-24 15:10:42] <jgbarah> For the tests, in addition to testing the functions by calling them, it would be great if you use a sample mbox...
+[2016-05-24 15:10:55] <jgbarah> ...and test that the software threads messages well.
+[2016-05-24 15:11:03] <priya_> yes I'm using a sample mbox.... 
+[2016-05-24 15:11:12] <priya_> ok
+[2016-05-24 15:11:17] <jgbarah> ok, perfect. Just waiting to see it working ;-)
+[2016-05-24 15:11:29] <priya_> hehe..ok :)
+[2016-05-24 15:11:43] <jgbarah> Let me comment a bit on the general structure of the job.
+[2016-05-24 15:11:51] <priya_> yeah ok
+[2016-05-24 15:12:19] <jgbarah> On one hand, you have to use Perceval to get the metainformation for some mboxes.
+[2016-05-24 15:12:43] <jgbarah> Then, use Perceval as well for getting metainformation from commit records in git repositories
+[2016-05-24 15:12:56] <priya_> okay
+[2016-05-24 15:13:03] <jgbarah> Then, thread the metainformation about messages, and match threads to commits
+[2016-05-24 15:13:31] <jgbarah> For this, we will try a couple of options, probably starting with matching the subject in the thread to the first line of the commit comment
+[2016-05-24 15:14:02] <priya_> oh ok
+[2016-05-24 15:14:19] <jgbarah> Once the matching is complete, it will be a matter of producing a combined set of information, with the thread id, the commit hash, and some info about both the thread and the commit
+[2016-05-24 15:14:31] <jgbarah> eg, the thread subject, time-span, participants,
+[2016-05-24 15:14:39] <jgbarah> and the commit author, date, length...
+[2016-05-24 15:14:51] <jgbarah> For storage we will use ElasticSearch
+[2016-05-24 15:15:00] <priya_> yeah ok
+[2016-05-24 15:15:25] <jgbarah> That is, when using Perceval, we will upload the raw information to ElasticSearch, and then when the combined info is produced, we will uploard it to Elasticsearch too
+[2016-05-24 15:15:41] <jgbarah> And finall, we will produce a dashboard for Kibana
+[2016-05-24 15:16:28] <jgbarah> Similar to https://kibana.bitergia.com/xen
+[2016-05-24 15:16:38] <priya_> combined info is all the details which u had mentioned like time-span, participants all those things?
+[2016-05-24 15:16:46] <jgbarah> Are you already familiar with ElasticSearch / Kibana ?
+[2016-05-24 15:17:30] <jgbarah> Yes, in technical terms, combined info will be one or more ElasticSearch indexes, with information about matched commits and threads, that will be used to produce the dashboard
+[2016-05-24 15:17:44] <priya_> No, I just went through it. What it is about and all... Not much
+[2016-05-24 15:17:47] <priya_> ok
+[2016-05-24 15:18:10] <jgbarah> ok, Then we could use this schedule for the first weeks:
+[2016-05-24 15:18:33] <priya_> ok jgbarah. That would be fine :)
+[2016-05-24 15:19:18] <jgbarah> (1) You set up an ElasticSearch and a Kibana instance and start playing (instructions for download are at https://www.elastic.co/products
+[2016-05-24 15:19:33] <jgbarah> (2) You finish the tests for the mbox thing
+[2016-05-24 15:19:41] <priya_> yeah ok
+[2016-05-24 15:20:08] <jgbarah> (3) You upload the Perceval raw info and the threading info to ElasticSearch. For this, you can use the elasticsearch.py package
+[2016-05-24 15:20:24] <priya_> ok
+[2016-05-24 15:20:35] <jgbarah> (4) You get familiar with getting commits from git repos with Perceval, and again upload them to elasticsearch
+[2016-05-24 15:20:48] <jgbarah> Once we're there, we will have advanced a lot ;-)
+[2016-05-24 15:20:55] → _acs_ joined (~acs@253.red-83-39-97.dynamicip.rima-tde.net)
+[2016-05-24 15:20:58] <priya_> oh nice :)
+[2016-05-24 15:21:19] <jgbarah> I guess all of these could go in parallel, but if you prefer we can sequence them in this order (1) (2) (3) (4)
+[2016-05-24 15:21:29] <jgbarah> Does that sounds like a plan?
+[2016-05-24 15:21:41] <priya_> yes 
+[2016-05-24 15:21:52] <priya_> fine fine :)
+[2016-05-24 15:22:14] <jgbarah> For elasticsearch.py, you can browse https://www.elastic.co/guide/en/elasticsearch/client/python-api/current/index.html
+[2016-05-24 15:22:45] <priya_> yeah ok
+[2016-05-24 15:23:01] <jgbarah> Please notice thare is elasticsearch_dsl.py as well, which is higher level. But for this, probably we won't need it.
+[2016-05-24 15:23:22] <priya_> oh ok
+[2016-05-24 15:23:26] <jgbarah> Once you have ElasticSearch installed, it would be easy to test it with elasticsearch.py
+[2016-05-24 15:23:42] <priya_> ok 
+[2016-05-24 15:23:58] <jgbarah> Maybe this could have you fed until our next meeting, on Wed. next week?
+[2016-05-24 15:24:29] <priya_> yeh fine
+[2016-05-24 15:24:36] <priya_> Wed same time?
+[2016-05-24 15:24:47] <jgbarah> Hi, lars_kurth, I hadn't noticed you there!!
+[2016-05-24 15:24:53] <jgbarah> Yes, Wed same time
+[2016-05-24 15:25:00] <priya_> ok
+[2016-05-24 15:25:13] <jgbarah> For now, you can go onn working in your repo. At some point we will start to pr GrimoireLab repos
+[2016-05-24 15:25:14] <priya_> Hello lars_kurth
+[2016-05-24 15:25:25] <jgbarah> So, inn summary, try to:
+[2016-05-24 15:25:28] <priya_> oh ok
+[2016-05-24 15:25:54] <jgbarah> (1) Have a working deployment of ElasticSearch and Kibana. Try it at least a bit, try to produce a dashboard with the demo data for example
+[2016-05-24 15:26:06] <jgbarah> (2) Produce the tests for the trheading code
+[2016-05-24 15:26:47] <priya_> yeah okay
+[2016-05-24 15:26:49] <jgbarah> (3) Write a script that uploads both the raw Perceval output on an mbox, and the threading info, to ElasticSearch
+[2016-05-24 15:27:52] <jgbarah> For this, you can just upload a new index to ElasticSearch with all the info in the raw Perceval index, plus the fileds you may need to tag each message with its corresponding thread (probably one field).
+[2016-05-24 15:28:17] <jgbarah> (4) Write a script that uploads the Perceval output on a git repo to ElasticSearch
+[2016-05-24 15:29:06] <jgbarah> (5) Only if you have time, and are in the mood, try to produuce a simple dashboard for either the gti or the mbox info (or both ;-) ) in Kibana
+[2016-05-24 15:29:16] <jgbarah> Do you find this reasonable?
+[2016-05-24 15:29:47] <jgbarah> ( lars_kurth seems to be away ;-) )
+[2016-05-24 15:29:54] <priya_> yes :)
+[2016-05-24 15:29:59] <jgbarah> ok, perfect.
+[2016-05-24 15:30:22] <jgbarah> I will try to hangout here as much as possible. Send me an email message if you're stuck with anything, or need some more info.
+[2016-05-24 15:30:43] <priya_> yeah sure.. Thank you
+[2016-05-24 15:30:55] <jgbarah> To begin with, try to use this plan to produce a message, and probably a blog post (a kind of plan for starting the project)
+[2016-05-24 15:31:21] <priya_> oh ok
+[2016-05-24 15:31:45] <jgbarah> Just to organize things a bit, you can save logs of our irc conversations in your repository, and maybe link them from your blog posts
+[2016-05-24 15:32:03] <priya_> yeah ok
+[2016-05-24 15:32:23] <jgbarah> Say you can open a repository such as "outreachy-project", or something like that, open a directory, and wrtie files with the logs in it,
+[2016-05-24 15:32:52] <jgbarah> for example, this one could be 2016-05-24.irc
+[2016-05-24 15:33:11] <priya_> ohh ok
+[2016-05-24 15:33:36] <jgbarah> And in that same repository, you could open like five issues, one for each of the topics above.
+[2016-05-24 15:33:53] <priya_> ohhh ok... got it :)
+[2016-05-24 15:34:20] <jgbarah> As you work on them, you can update the ticket. Let me and lars_kurth be a part of the repo, and we will comment on the tickets as well, if nneeded
+[2016-05-24 15:34:34] <priya_> okay
+[2016-05-24 15:35:21] <jgbarah> Those will be your progress and scheduling tickets, probably later we will have GrimoireLab tickets as well.
+[2016-05-24 15:35:29] <jgbarah> And....
+[2016-05-24 15:35:31] <priya_> ok
+[2016-05-24 15:35:37] <jgbarah> ....I guess this is all from my side for now...
+[2016-05-24 15:35:46] <jgbarah> Anything else from your side?
+[2016-05-24 15:36:03] <priya_> ok Thanks for the detailed info jgbarah
+[2016-05-24 15:36:10] <jgbarah> Thanks a lot to you!
+[2016-05-24 15:36:38] <priya_> :) 
+[2016-05-24 15:36:46] <jgbarah> TAlk to you next Wed, or earlier. Please note that on Monday and Tuesday probably I won't be available, although I'll try
+[2016-05-24 15:37:07] <jgbarah> This was our first meeting ;-)
+[2016-05-24 15:37:20] <priya_> ok... Will meet you next week... 
+[2016-05-24 15:37:26] <priya_> yeah :)
+[2016-05-24 15:38:57] <jgbarah> Have a nice week
+[2016-05-24 15:39:17] <priya_> Thank you and same to you :) 
+[2016-05-24 15:44:37] ⇐ jgbarah quit (~jgb@193.147.77.23): Ping timeout: 260 seconds
+[2016-05-24 15:51:52] → jgbarah joined (~jgb@193.147.77.23)
+[2016-05-24 16:22:54] ⇐ dizquierdo quit (~dizquierd@92.177.22.54): Quit: Leaving
+[2016-05-24 16:23:08] → dizquierdo joined (~dizquierd@92.177.22.54)
+[2016-05-24 16:39:14] ⇐ jgbarah quit (~jgb@193.147.77.23): Ping timeout: 260 seconds
+[2016-05-24 17:21:58] → jgbarah joined (~jgb@193.147.77.23)
+[2016-05-24 17:34:19] ⇐ jgbarah quit (~jgb@193.147.77.23): Ping timeout: 250 seconds
+[2016-05-24 17:49:49] ⇐ priya_ quit (uid136681@gateway/web/irccloud.com/x-pbwecdslslvpnhhc): Quit: Connection closed for inactivity
+[2016-05-24 17:49:49] * Connection closed for inactivity
+[2016-05-24 17:49:49] * Socket closed
+[2016-05-25 10:23:00] → Joined channel #metrics-grimoire
+[2016-05-25 10:23:00] * Channel mode is +cnt
+[2016-05-25 10:23:00] * Channel timestamp is 1349876710
