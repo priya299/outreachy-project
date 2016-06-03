@@ -1,0 +1,199 @@
+[13:24:49]      ‹lars_kurth›  [11:30:44] Hi
+[13:24:49]      ‹priya_›  [11:30:47] hi jgbarah
+[13:24:49]      ‹priya_›  [11:30:55] hi lars_kurth
+[13:24:49]      ‹jgbarah›  [11:31:00] ok, 5 mins
+[13:24:49]      ‹priya_›  [11:31:10] ok
+[13:24:49]      ‹lars_kurth›  [11:31:43] Why don't we start with an update from priya_ (I just can't contribute much, as I am on a phone line re a claim on my car)
+[13:24:49]      ‹priya_›  [11:33:05] I got the testing code working now... and also I have set up elasticsearch and kibana instance and made a demo dashboard following the tutorial
+[13:24:49]      ‹priya_›  [11:33:34] I had mailed you with the links to the blog and the new repository which I have created.
+[13:24:49]      ‹priya_›  [11:34:02] Due to sudden illness, I could not complete all the tasks given, but managed to do some.
+[13:24:49]      ‹jgbarah›  [11:34:56] Thanks, priya_
+[13:24:49]      ‹jgbarah›  [11:35:01] Something else about the status ?
+[13:24:49]      ‹jgbarah›  [11:36:49] priya_ ???
+[13:24:49]      ‹priya_›  [11:37:03] I have made minor changes in testing code... I'll update that soon. And I have just started with feeding the perceval output to elasticsearch
+[13:24:49]      ‹lars_kurth›  [11:37:12] We should also discuss obstacles, and the next set of goals
+[13:24:49]      ‹priya_›  [11:37:20] ok
+[13:24:49]      ‹jgbarah›  [11:37:32] anything else, priya_ ?
+[13:24:49]      ‹lars_kurth›  [11:37:36] Also maybe working practices
+[13:24:49]      ‹priya_›  [11:38:12] jgbarah since you had mentioned that you could not follow my blog post, I had mailed you both regarding the summary of tasks done last week. Hope you got the mail
+[13:24:49]      ‹priya_›  [11:38:29] Also the links
+[13:24:49]      ‹jgbarah›  [11:38:31] lars_kurth: We talked a bit about working practices during the last meeting
+[13:24:49]      ‹jgbarah›  [11:38:52] Thanks, priya_
+[13:24:49]      ‹lars_kurth›  [11:39:11] Cool: that is fine - we should just make sure that everything is done in the open and on mailing lists. It's one of the core Outreachy objectives
+[13:24:49]      ‹priya_›  [11:39:16] I'm sorry that I could not complete all the tasks assigned last week. I could not work as I had planned
+[13:24:49]      ‹jgbarah›  [11:39:33] If you're done with the status, let's go over the tasks from last week. Even when you already reviewed them, let's go one by one.
+[13:24:49]      ‹priya_›  [11:39:37] yeh ok I'll mail to xen-devel mailing list regarding the progress
+[13:24:49]      ‹jgbarah›  [11:39:45] No worries. Let's see about how to progress ;-)
+[13:24:49]      ‹priya_›  [11:39:52] ok thanku :)
+[13:24:49]      ‹jgbarah›  [11:40:23] But before this, lars_kurth: the model I proposed to priya_ was based on her blog posts, tickets in GitHub, PRs in GitHub and these meetings
+[13:24:49]      ‹jgbarah›  [11:40:35] (the logs of these meetings being public, of course)
+[13:24:49]      ‹lars_kurth›  [11:40:44] That is fine with me: just CC xen-devel on status updates
+[13:24:49]      ‹jgbarah›  [11:40:49] lars_kurth: Do you prefer that we use the mailing list instead of tickets?
+[13:24:49]      ‹lars_kurth›  [11:41:17] jgbarah: I don't mind, but mails such as status updates should be publiuc
+[13:24:49]      ‹jgbarah›  [11:41:19] ok. Let's include then, whenever we have a blog post, a message to the xen mailing list,
+[13:24:49]      ‹priya_›  [11:41:32] ok
+[13:24:49]      ‹jgbarah›  [11:41:33] and let's post all the status updates to the blog
+[13:24:49]      ‹jgbarah›  [11:41:36] right?
+[13:24:49]      ‹lars_kurth›  [11:41:45] Maybe the subject line be Week XYZ Dashboard Outreachy Status Update
+[13:24:49]      ‹priya_›  [11:41:56] yeh ok
+[13:24:49]      ‹jgbarah›  [11:41:57] ok.
+[13:24:49]      ‹jgbarah›  [11:42:13] So, let's go then over the acction points from last week
+[13:24:49]      ‹jgbarah›  [11:42:19] (1) Have a working deployment of ElasticSearch and Kibana. Try it at least a bit, try to produce a dashboard with the demo data for example [2016-05-24 15:26:06] <jgbarah> (2) Produce the tests for the trheading code
+[13:24:49]      ‹lars_kurth›  [11:42:20] I would say, make a summary on the blog every month. Weekly is overkill
+[13:24:49]      ‹jgbarah›  [11:42:45] lars_kurth: The idea was to include the irc, and a summary of actions to be done and done.
+[13:24:49]      ‹jgbarah›  [11:42:55] We need it somewhere, and the blog seemed like a good place
+[13:24:49]      ‹jgbarah›  [11:43:02] But if you prefer elsewhere...
+[13:24:49]      ‹jgbarah›  [11:43:39] Coming to your tasks, I guess (from what I read in the blog post), that (1) is complete, right?
+[13:24:49]      ‹priya_›  [11:43:50] yes
+[13:24:49]      ‹jgbarah›  [11:44:15] ok. For (2), I couldn't see the tests. I'll do asap and come back to you with that
+[13:24:49]      ‹jgbarah›  [11:44:28] Could you summarize what do you test please (very briefly)
+[13:24:49]      ‹jgbarah›  [11:45:07] lars_kurth: Are you ok with that weekly post with actions and actions done, and the irc log, or prefer that info elsewhere?
+[13:24:49]      ‹jgbarah›  [11:45:26] (Besides, irc logs would be archived in GitHub, as Priya is already doing)
+[13:24:49]      ‹lars_kurth›  [11:46:19] lars_kurth: no strong opinion
+[13:24:49]      ‹jgbarah›  [11:47:04] ok, let's go on this way, then. If we later see that it seems like an overkill, we can reevaluate.
+[13:24:49]      ‹lars_kurth›  [11:47:19] I think that works
+[13:24:49]      ‹jgbarah›  [11:48:33] So, sumarizing about updates: a post after the meeting, with the irc log, the list of actions for the next days, the summary of actions done, and a status update about other aspects that may be rrelevant
+[13:24:49]      ‹jgbarah›  [11:48:51] That same post, or a link to it, sent to the xen mailing list
+[13:24:49]      ‹jgbarah›  [11:48:54] os, priya_ ?
+[13:24:49]      ‹jgbarah›  [11:49:18] We still keep with the idea of using GitHub issues for a more fine grained followup about the tasks
+[13:24:49]      ‹priya_›  [11:49:26] sry got disconnected
+[13:24:49]      ‹priya_›  [11:49:34] I get the count of children for a particular message and compare it with count of property from the final json file
+[13:24:49]      ‹jgbarah›  [11:49:34] (it was: ok, priya_ ?
+[13:24:49]      ‹jgbarah›  [11:49:53] priya_: Do you have the log for what I wrote?
+[13:24:49]      ‹priya_›  [11:50:04] yes
+[13:24:49]      ‹priya_›  [11:50:09] I have the log
+[13:24:49]      ‹jgbarah›  [11:50:32] I mean, for my comments on how to report weekly and that...
+[13:24:49]      ‹jgbarah›  [11:50:48] priya_: please, confirm...
+[13:24:49]      ‹priya_›  [11:50:56] Yes, I had linked the log details in my blog post
+[13:24:49]      ‹jgbarah›  [11:51:09] No, I'm talking about right now ;-)
+[13:24:49]      ‹jgbarah›  [11:51:23] Since you got discnonected, I don't know if you have the latest lines we wrote
+[13:24:49]      ‹lars_kurth›  [11:51:26] I have the log, can send it
+[13:24:49]      ‹priya_›  [11:51:57] ohhh sorry, I thought u were talking about the previous log
+[13:24:49]      ‹jgbarah›  [11:52:06] priya_: ;-)
+[13:24:49]      ‹priya_›  [11:52:08] yes I guess I missed some part
+[13:24:49]      ‹jgbarah›  [11:52:19] ok, I repeat the summary then:
+[13:24:49]      ‹jgbarah›  [11:52:36] So, sumarizing about updates: a post after the meeting, with the irc log, the list of actions for the next days, the summary of actions done, and a status update about other aspects that may be rrelevant
+[13:24:49]      ‹lars_kurth›  [11:52:36] OK. we should focus on the next steps and I will send the complete log post the event
+[13:24:50]      ‹jgbarah›  [11:52:45] That same post, or a link to it, sent to the xen mailing list
+[13:24:50]      ‹jgbarah›  [11:52:54] ok, lars_kurth, thanks
+[13:24:50]      ‹jgbarah›  [11:53:03] Let's follow on with the actions then
+[13:24:50]      ‹jgbarah›  [11:53:21] (3) Write a script that uploads both the raw Perceval output on an mbox, and the threading info, to ElasticSearch
+[13:24:50]      ‹jgbarah›  [11:53:26] Could you do this?
+[13:24:50]      ‹priya_›  [11:53:52] ok Lars, so can you please share it?
+[13:24:50]      ‹lars_kurth›  [11:54:08] I will send it after we are done
+[13:24:50]      ‹jgbarah›  [11:54:38] priya_, about (3) ??
+[13:24:50]      ‹priya_›  [11:54:48] yes thanku Lars
+[13:24:50]      ‹priya_›  [11:54:57] yeh about (3), I have just started
+[13:24:50]      ‹lars_kurth›  [11:55:29] Any areas you need help/background with, or are you fine with the task?
+[13:24:50]      ‹jgbarah›  [11:55:38] ok, then I assume that you couldn't start with (4) Write a script that uploads the Perceval output on a git repo to ElasticSearch
+[13:24:50]      ‹jgbarah›  [11:55:56] Right?
+[13:24:50]      ‹priya_›  [11:56:01] yes
+[13:24:50]      ‹priya_›  [11:56:03] right
+[13:24:50]      ‹jgbarah›  [11:56:30] ok, then, as lars_kurth says, any area where you are blocked that we can help?
+[13:24:50]      ‹priya_›  [11:57:31] I have just started. So as I progress I might need your help :)
+[13:24:50]      ‹jgbarah›  [11:57:40] ok, great
+[13:24:50]      ‹jgbarah›  [11:58:06] Then, for the next week, let's move on, and try to have tasks (3), (4) and (5) done.
+[13:24:50]      ‹priya_›  [11:58:22] yeh ok
+[13:24:50]      ‹jgbarah›  [11:58:37] (5) was "try to produuce a simple dashboard for either the git or the mbox info (or both ;-) ) in Kibana"
+[13:24:50]      ‹priya_›  [11:59:03] yes I remember
+[13:24:50]      ‹jgbarah›  [11:59:28] So, we can followup in the GitHub issues. If you find any blocker, please update there, and drop me an email if you see I don't react, please
+[13:24:50]      ‹priya_›  [11:59:45] yeah sure
+[13:24:50]      ‹jgbarah›  [12:00:05] BTW, try to keep the GitHub issues updated as you progress, that way i can get the sense of the problems you're having (or the lack of them ;-) )
+[13:24:50]      ‹priya_›  [12:00:40] yeah ok. I'll update the problems there
+[13:24:50]      ‹lars_kurth›  [12:00:42] That is good for me also
+[13:24:50]      ‹priya_›  [12:00:48] ok
+[13:24:50]      ‹jgbarah›  [12:00:51] We can add another task, whcih could be:
+[13:24:50]      ‹jgbarah›  [12:01:22] (6) analyze the git for the Linux kernel with Perceval, and upload results to ElasticSearch
+[13:24:50]      ‹lars_kurth›  [12:01:31] jgbarah: I may also add a number of issues / TODO items, if that is OK and then we can discuss/schedule in subsequent meetings
+[13:24:50]      ‹jgbarah›  [12:01:49] lars_kurth: perfect
+[13:24:50]      ‹priya_›  [12:01:59] ok
+[13:24:50]      ‹jgbarah›  [12:02:08] for (6), lars_kurth , it could be the Torvalds repo?
+[13:24:50]      ‹jgbarah›  [12:02:44] I'm thinking about capturing the commits we're missing in the Xen mailing list
+[13:24:50]      ‹jgbarah›  [12:03:10] Then, priya_ please creat a new issue for (6)
+[13:24:50]      ‹priya_›  [12:03:24] ok yeah. I'll create another issue
+[13:24:50]      ‹jgbarah›  [12:03:37] And while lars_kurth can answer, next meeting
+[13:24:50]      ‹lars_kurth›  [12:03:41] For (6) there are some potential issues as changes will first go into some Xen maintainer repos, which eventually end up in Torvalds repo. So there is a question how to track everythign all teh way through to Torvalds repo
+[13:24:50]      ‹lars_kurth›  [12:04:19] priya_: I will add a comment to the new issue outlining my understanding of the workflow
+[13:24:50]      ‹jgbarah›  [12:04:24] lars_kurth: ok. We can track several repos, if needed. But probably it makes sense to start with some Xen maintainers repos then
+[13:24:50]      ‹jgbarah›  [12:05:05] I wanted priya_ to work with one Linux repo, just because of its size, to be sure that she masters the procedure for running Perceval etc. It may take a while...
+[13:24:50]      ‹lars_kurth›  [12:05:34] jgbarah: we can start with one. Let me take an action to follow up what the best one is
+[13:24:50]      ‹jgbarah›  [12:06:04] lars_kurth: ok. Let's start with the Torvalds one, and then we can discuss in the tickets if there are better optionns
+[13:24:50]      ‹lars_kurth›  [12:06:39] Works for me: I am assuming as we are matching by titles, Torvalds repos is as good as any
+[13:24:50]      ‹jgbarah›  [12:06:45] priya_: That repo (well, a mirror in GitHub) ishttps://github.com/torvalds/linux
+[13:24:50]      ‹lars_kurth›  [12:07:10] jgbarah: I am not sure this is the best one - it's out-of-date
+[13:24:50]      ‹lars_kurth›  [12:07:15] I think
+[13:24:50]      ‹jgbarah›  [12:07:29] lars_kurth: The only trouble I see with Torvalds is that commits will take longer to reach there, which means we cannot match the latest threads, probably
+[13:24:50]      ‹jgbarah›  [12:07:57] lars_kurth: Really? I see updated of some hours ago...
+[13:24:50]      ‹lars_kurth›  [12:08:03] That is fine: in the end nothing is really released until it hits torvalds repo
+[13:24:50]      ‹jgbarah›  [12:08:12] But well, let's go to the original one, just in case:
+[13:24:50]      ‹lars_kurth›  [12:08:18] It seems to be a mirror, so that is fine then
+[13:24:50]      ‹lars_kurth›  [12:08:49] The official one ishttp://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/
+[13:24:50]      ‹jgbarah›  [12:09:10] ok, let's go with it for (6) then
+[13:24:50]      ‹priya_›  [12:09:43] so I should follow the link which lars_kurth have shared right?
+[13:24:50]      ‹jgbarah›  [12:09:51] lars_kurth: Tracking commits in all the other developer repos could give us interesting measures about how long does it take to pass though the differnt layers of the Linux hierarchy
+[13:24:50]      ‹jgbarah›  [12:10:16] Yes, priya_,http://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/ is the repo to mine in (6)
+[13:24:50]      ‹lars_kurth›  [12:10:19] jgbarah: that's right - but we need to discuss data model (I guess it's time to commit)
+[13:24:50]      ‹jgbarah›  [12:10:34] ok. We can do that later.
+[13:24:50]      ‹lars_kurth›  [12:10:40] Exactly
+[13:24:50]      ‹priya_›  [12:10:48] ok fine
+[13:24:50]      ‹jgbarah›  [12:10:59] Well, I don't have other issues, except for the time for the meeting next week. Do you have something else?
+[13:24:50]      ‹lars_kurth›  [12:11:19] I sent an invite (was on my TODO list) as originally agreed every Wed
+[13:24:50]      ‹jgbarah›  [12:11:38] ok for me
+[13:24:50]      ‹priya_›  [12:11:43] ok for me too
+[13:24:50]      ‹jgbarah›  [12:11:50] Great!
+[13:24:50]      ‹priya_›  [12:11:50] so next wednesday, same time?
+[13:24:50]      ‹jgbarah›  [12:12:13] I guess it was 10:30 BST, right?
+[13:24:50]      ‹lars_kurth›  [12:12:38] OK: I have assumed 12:30BST - can change the invite
+[13:24:50]      ‹lars_kurth›  [12:12:45] to 10:30 BST
+[13:24:50]      ‹priya_›  [12:13:11] 10:30 BST is 3:00am IST
+[13:24:50]      ‹priya_›  [12:13:23] I guess its not 10:30 BST
+[13:24:50]      ‹lars_kurth›  [12:13:34] Hang on: what time is it there now?
+[13:24:50]      ‹priya_›  [12:14:01] 17:43 IST
+[13:24:50]      ‹lars_kurth›  [12:14:13] 10:30 is 14:30 IST
+[13:24:50]      ‹jgbarah›  [12:14:23] lars_kurth priya_ I had noted 11:30 CEST
+[13:24:50]      ‹lars_kurth›  [12:14:30] Sorry 15:00 IST
+[13:24:50]      ‹jgbarah›  [12:14:56] But let me check for 12:30 BST, probably I have no problem
+[13:24:50]      ‹lars_kurth›  [12:15:11] OK. Either works for me
+[13:24:50]      ‹jgbarah›  [12:15:35] Ooops. Next week I do have a conflict with 12:30 BST.
+[13:24:50]      ‹jgbarah›  [12:15:50] If you don't mind, let's do 10:30 BST instead
+[13:24:50]      ‹lars_kurth›  [12:16:12] I have a conflict at 10:30 BST (doctors appointment). But you two can go ahead. I will re-schedule for 10:30. Is that OK?
+[13:24:50]      ‹jgbarah›  [12:16:21] If 12:30 BST is better for you in general, I can easily adapt for next weeks...
+[13:24:50]      ‹lars_kurth›  [12:16:44] I just lost track of the e-maill thread
+[13:24:50]      ‹jgbarah›  [12:16:44] lars_kurth: It is ok with me. But if you prefer to be, I can also do it earlier
+[13:24:50]      ‹lars_kurth›  [12:17:38] Both times work: just need to make a decision
+[13:24:50]      ‹priya_›  [12:17:40] yeh, 12:30 BST is fine for me
+[13:24:50]      ‹jgbarah›  [12:17:58] ok, we're looping ;-)
+[13:24:50]      ‹priya_›  [12:18:17] ok
+[13:24:50]      ‹jgbarah›  [12:18:24] Options are: 10:30 BSD next wed, without lars_kurth or maybe earlier with him
+[13:24:50]      ‹jgbarah›  [12:18:46] For me both are ok, I could start at 8:30 BST if needed
+[13:24:50]      ‹lars_kurth›  [12:18:48] Without me : I will reschedule the series
+[13:24:50]      ‹jgbarah›  [12:19:11] ok. 10:30 BST next Wednesday
+[13:24:50]      ‹jgbarah›  [12:19:15] Perfect!
+[13:24:50]      ‹jgbarah›  [12:19:23] Anything else?
+[13:24:50]      ‹priya_›  [12:19:36] excuse me... but 10:30 BST it shows 3:00 IST
+[13:24:50]      ‹lars_kurth›  [12:19:42] Update sent
+[13:24:50]      ‹lars_kurth›  [12:19:53] 3:00 PM?
+[13:24:50]      ‹priya_›  [12:20:00] NO 3:00am
+[13:24:50]      ‹jgbarah›  [12:20:11] ???
+[13:24:50]      ‹jgbarah›  [12:20:23] You're ahead of us in time, not behind... ;-)
+[13:24:50]      ‹lars_kurth›  [12:21:42] That can't be: set up your own invite for 3pm
+[13:24:50]      ‹jgbarah›  [12:21:45] priya_: Are you converting 10:30pm or 10:30am ?
+[13:24:50]      ‹jgbarah›  [12:22:18] Well, anyway, 10:30 BST seems to be 15:00 IST. Let's zero on that, if you both agree
+[13:24:50]      ‹lars_kurth›  [12:22:32] Agreed: invite sent
+[13:24:50]      ‹priya_›  [12:22:49] ohh I was converting 10:30 pm
+[13:24:50]      ‹jgbarah›  [12:22:54] ok ;-)
+[13:24:50]      ‹jgbarah›  [12:23:05] Well, i guess we're all good then
+[13:24:50]      ‹priya_›  [12:23:06] ok sorry for the confusions
+[13:24:50]      ‹jgbarah›  [12:23:12] No problem. Anthing else?
+[13:24:50]      ‹priya_›  [12:23:15] yeh ok
+[13:24:50]      ‹priya_›  [12:23:19] nope, fine
+[13:24:50]      ‹jgbarah›  [12:23:53] lars_kurth, anything else?
+[13:24:50]      ‹lars_kurth›  [12:23:59] No: thank you all
+[13:24:50]      ‹jgbarah›  [12:24:07] ok, perfect then
+[13:24:50]      ‹priya_›  [12:24:14] thanku :)
+[13:24:50]      ‹jgbarah›  [12:24:19] See you on Wed. lars_kurth please send the log then
+[13:24:50]      ‹lars_kurth›  [12:24:25] Done
+[13:24:50]      ‹jgbarah›  [12:24:30] priya_: please, create the post with the log etc.
+[13:24:50]      ‹jgbarah›  [12:24:34] Bye!
+[13:24:50]      ‹priya_›  [12:24:38] yeah ok
+[13:24:50]      ‹priya_›  [12:24:39] bye
