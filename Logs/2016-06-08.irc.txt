@@ -1,0 +1,207 @@
+[2016-06-08 01:57:38] → jgbarah joined (~jgb@176.149.220.87.dynamic.jazztel.es)
+[2016-06-08 02:49:58] ⇐ priya_ quit (uid136681@gateway/web/irccloud.com/x-gxsmkrlzdpliukep): Quit: Connection closed for inactivity
+[2016-06-08 02:49:58] * Connection closed for inactivity
+[2016-06-08 02:49:58] * Socket closed
+[2016-06-08 10:13:34] → Joined channel #metrics-grimoire
+[2016-06-08 10:13:35] * Channel mode is +cnt
+[2016-06-08 10:13:35] * Channel timestamp is 1349876710
+[2016-06-08 11:49:53] → jgbarah joined (~jgb@176.149.220.87.dynamic.jazztel.es)
+[2016-06-08 12:33:40] ⇐ jgbarah quit (~jgb@176.149.220.87.dynamic.jazztel.es): Ping timeout: 272 seconds
+[2016-06-08 13:12:50] → jgbarah joined (~jgb@193.147.77.20)
+[2016-06-08 13:30:20] ⇐ jgbarah quit (~jgb@193.147.77.20): Quit: Leaving.
+[2016-06-08 13:30:33] → jgbarah joined (~jgb@193.147.77.20)
+[2016-06-08 13:33:41] ⇐ jgbarah quit (~jgb@193.147.77.20): Client Quit
+[2016-06-08 13:33:48] → jgbarah joined (~jgb@193.147.77.20)
+[2016-06-08 13:41:37] → dizquierdo joined (~dizquierd@92.177.22.54)
+[2016-06-08 14:26:20] → _acs_ joined (~acs@109.red-79-145-181.dynamicip.rima-tde.net)
+[2016-06-08 14:58:18] <jgbarah> Hi, priya_ lars_kurth, are you ready already ?'
+[2016-06-08 14:58:28] <priya_> yes I'm here
+[2016-06-08 14:59:15] <priya_> hi jgbarah, lars_kurth
+[2016-06-08 14:59:25] <jgbarah> Let's wait for a moment for lars_kurth, probably he is busy with somethinng else, and in any case it is still not the time
+[2016-06-08 14:59:37] <priya_> yeh ok
+[2016-06-08 15:02:32] ⇐ jgbarah quit (~jgb@193.147.77.20): Read error: Connection reset by peer
+[2016-06-08 15:02:38] → jgbarah1 joined (~jgb@193.147.77.20)
+[2016-06-08 15:04:32] <jgbarah1> Ooops. I got disconnected
+[2016-06-08 15:04:46] <jgbarah1> Can you read me now, priya_, lars_kurth ?
+[2016-06-08 15:04:53] <priya_> yes 
+[2016-06-08 15:05:08] <priya_> yes jgbarah
+[2016-06-08 15:06:48] <jgbarah1> Good. Let's wayt 2 more minutes for lars_kurth, and let's start anyway
+[2016-06-08 15:07:04] <priya_> ohk fine
+[2016-06-08 15:11:21] <jgbarah1> ok, priya_, let's go. lars_kurth will join when he can, and in any case we can share later the log with min
+[2016-06-08 15:11:25] <jgbarah1> (with him)
+[2016-06-08 15:11:44] <priya_> ok jgbarah... so we'll start
+[2016-06-08 15:11:46] <jgbarah1> First of all, I didn't see movement in the tickets
+[2016-06-08 15:12:15] <jgbarah1> priya_: I need that you annotate and comment in the GitHub issues, so that I know what's happening, and anyone can have a look too
+[2016-06-08 15:12:40] <jgbarah1> It is not only a matter of synchronizing once a week, but a continuous process
+[2016-06-08 15:12:45] <priya_> yes jgabarh..  I am getting stuck with erros... I feel those are small and manageble errors ..thats d reason why i dont post it there
+[2016-06-08 15:13:01] <jgbarah1>  But still, please document them in the tickets.
+[2016-06-08 15:13:03] <priya_> but I guess its taking long time for me to learn things
+[2016-06-08 15:13:13] <jgbarah1> If they are small, that's better for you ;-)
+[2016-06-08 15:13:28] <jgbarah1> and maybe I can find out how to help (or lars_kurth, or somebody else)
+[2016-06-08 15:13:32] <priya_> ok sure.... recently I found some bugs in my testin code... nd I was behind it
+[2016-06-08 15:13:39] <priya_> ok thanku jgbarah
+[2016-06-08 15:13:41] <priya_> so now
+[2016-06-08 15:14:02] <jgbarah1> So, please, starting today, please comment on all the tickets where you are working, even if you're stuck
+[2016-06-08 15:14:31] <jgbarah1> Please comment as well intermediate results, so that we can follow up easily, and these meeting will be more productive, please
+[2016-06-08 15:14:36] <priya_> I have taken the output of raw perceval and threading info into a file..... and I'm feeding it to elasticsearch and I'm stuck with errors there
+[2016-06-08 15:14:46] <priya_> ok I will from now on
+[2016-06-08 15:15:06] <jgbarah1> Well, we have a good example of why commenting in the issues could be better ;-)
+[2016-06-08 15:15:16] <priya_> https://usercontent.irccloud-cdn.com/file/XK4LO7YH/elastic_error.png
+[2016-06-08 15:15:33] <priya_> This is the erro  which I'm stuck with... I'll post it there also
+[2016-06-08 15:15:36] <jgbarah1> Instead of dumping Perceval output to a file, you better upload it directly to elasticsearch
+[2016-06-08 15:16:07] <priya_> what I had done is... I need to add headers right? so for that I dumped it to an output file
+[2016-06-08 15:16:22] <jgbarah1> That error seems easy, what you'rre sending to ElasticSearch seems to be not correct JSON
+[2016-06-08 15:16:28] <priya_> while using bulkAPI i need to add headers...it says
+[2016-06-08 15:16:42] <jgbarah1> What do you mean by adding headers?'
+[2016-06-08 15:17:27] <priya_> 1 header line... like giving the index, type and id for each message.... only then I can use bulkaAPI method of putting large data to elasticsearch...
+[2016-06-08 15:17:40] <priya_> I got this from elasticsearch bulkAPI documentation
+[2016-06-08 15:17:57] <priya_> https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-bulk.html This link
+[2016-06-08 15:19:14] <jgbarah1> First of all, are you using the elasticsearch.py library?
+[2016-06-08 15:19:54] <priya_> jgbarah1: I was trying to add the json file to elastic search using the curl command ( just to see if it works ) 
+[2016-06-08 15:20:13] <priya_> and no :( I have used subprocess till now, and not the elasticsearch.py library 
+[2016-06-08 15:20:46] <jgbarah1> For curl, that's fine to test. But if you have trouble, just skip that one, we don't really need it
+[2016-06-08 15:21:08] <jgbarah1> The problem seems to be that you're sending to ElasticSearch badly formatted JSON
+[2016-06-08 15:21:09] <priya_> I could create something like https://dpaste.de/VNC7/raw
+[2016-06-08 15:21:21] <jgbarah1> If you want, include the details in the ticket, and I try to help
+[2016-06-08 15:21:39] <priya_> using my python script ( adding that header {"index": {"_index": "mbox_files", "_type": "perceval", "_id": "0"}} ) thing every time in the for loop .. 
+[2016-06-08 15:21:48] <priya_> but it seems like I get that error :( 
+[2016-06-08 15:22:04] <jgbarah1> That's not proper JSON
+[2016-06-08 15:22:16] <jgbarah1> Have a look at how JSON should be:
+[2016-06-08 15:22:19] <priya_> okay
+[2016-06-08 15:22:47] <jgbarah1> http://www.json.org/
+[2016-06-08 15:22:54] <jgbarah1> It is a very simple format, anyway
+[2016-06-08 15:23:15] <priya_> okay, I'll make it proper
+[2016-06-08 15:23:41] <jgbarah1> In this case, at first sight, you need to somehow combine the dictionaries you have , because you have two
+[2016-06-08 15:23:50] <jgbarah1> One for the first line, another one for the rest
+[2016-06-08 15:23:58] <jgbarah1> Let me check just one moment...
+[2016-06-08 15:24:04] <priya_> okay
+[2016-06-08 15:25:36] <jgbarah1> ok, I see. You're right. For the raw interface, it expects two dictionaries (or more) separated by n
+[2016-06-08 15:25:44] <jgbarah1> (by \n)
+[2016-06-08 15:25:48] <jgbarah1> so that part is ok.
+[2016-06-08 15:25:54] <priya_> yes ... 
+[2016-06-08 15:25:55] <jgbarah1> Let's see...
+[2016-06-08 15:26:10] <jgbarah1> I'm going to try to reproduce that, hold on, please
+[2016-06-08 15:26:18] <priya_> okay
+[2016-06-08 15:31:19] <jgbarah1> priya_: I cannot reproduce it.
+[2016-06-08 15:31:37] <jgbarah1> Would you mind uploading all the info the the relevant ticket, and we follow on there?
+[2016-06-08 15:31:47] <priya_> jgbarah1: okey. I will do that 
+[2016-06-08 15:32:06] <jgbarah1> Then, two things with respect to this:
+[2016-06-08 15:32:22] <priya_> jgbarah1: so, you are not getting the error message I am getting ? :( 
+[2016-06-08 15:32:23] <jgbarah1> * For the specific case of using curl, let's use the ticket to see how we can fix this
+[2016-06-08 15:33:02] <jgbarah1> priya_: No, I cannot reproduce it because I need some ElasticSearch test to play, but I don't have one available right now
+[2016-06-08 15:33:11] <jgbarah1> I will try to reproduce later
+[2016-06-08 15:33:31] <jgbarah1> * But in parallel, try to use the elasticsearch Python library.
+[2016-06-08 15:33:51] <priya_> ok, so I'll upload my error in github issues
+[2016-06-08 15:34:23] <jgbarah1> * And a third action: maybe it can be useful to check Sense, a Chrome extension to interact with ElastcSearch
+[2016-06-08 15:34:38] <jgbarah1> similar (in functionality) to curl, but specific for ElasticSearch
+[2016-06-08 15:34:47] <priya_> ok but I'm not getting how to use it... from elasticsearch documentation I got to know about this curl way of adding data to elasticsearch..so I started trying with it
+[2016-06-08 15:35:14] <priya_> I will try using elasticsearch package
+[2016-06-08 15:35:23] <jgbarah1> https://www.elastic.co/blog/found-sense-a-cool-json-aware-interface-to-elasticsearch
+[2016-06-08 15:35:36] <jgbarah1> ok?
+[2016-06-08 15:36:37] <priya_> sense is something else right? is it related to elasticsearch.py?  I thought I should follow this one https://qbox.io/blog/building-an-elasticsearch-index-with-python
+[2016-06-08 15:36:41] <priya_> ok
+[2016-06-08 15:36:52] <jgbarah1> If ok, please, add three new issues to the GitHub repo, and mention them from #3
+[2016-06-08 15:37:16] <jgbarah1> One of the isssues for testing with curl, and we follow your problems there
+[2016-06-08 15:37:38] <jgbarah1> another one for testing the elasticsearch Python library, and you try to do basically the same with it
+[2016-06-08 15:37:47] <priya_> 3 new issues? ok.. So I need not upload in the before ccreated issue? alright
+[2016-06-08 15:37:47] <jgbarah1> the third one for doing the same with Sense
+[2016-06-08 15:38:02] <jgbarah1> What do you mean?
+[2016-06-08 15:38:02] <priya_> okay
+[2016-06-08 15:38:44] <jgbarah1> The idea is that you create those three issues, and you comment on them, either to describe how you did the thin, or to explain anny problem you hav
+[2016-06-08 15:38:48] <jgbarah1> (you have)
+[2016-06-08 15:39:10] <jgbarah1> Once they are done, you can proceed with #3, using the elasticsearch Python libreary
+[2016-06-08 15:39:17] <priya_> I menat we already have one issue regarding uploading info to elastic search... So i thought I'll continue in taht... No confusions :) I'll create new 3 issues
+[2016-06-08 15:39:24] <priya_> *meant
+[2016-06-08 15:39:29] <jgbarah1> That's #3, isn't it?
+[2016-06-08 15:39:30] <priya_> okay fine
+[2016-06-08 15:39:53] <priya_> Oops! sorry my mistake... din notice that
+[2016-06-08 15:39:56] <jgbarah1> I'm just trying to divide the problem so that it is more manegeable
+[2016-06-08 15:40:05] <priya_> ok i understood
+[2016-06-08 15:40:05] <jgbarah1> ok, fine then
+[2016-06-08 15:40:23] <jgbarah1> What about #1 ?
+[2016-06-08 15:40:35] <jgbarah1> https://github.com/priya299/outreachy-project/issues/1
+[2016-06-08 15:40:52] <priya_> That is done... I created a dashboard following the tuitorial... 
+[2016-06-08 15:41:57] <priya_> demo dashboard with examples provided in the tutorial..... they have used curl in that... So i followed the same for perceval data also... 
+[2016-06-08 15:42:45] <jgbarah1> Great. Then, briefly document the process, and propose that the ticket be closed. I just review it and close it, if so..
+[2016-06-08 15:43:19] <jgbarah1> Explain briefly how you set up ES, Kibana, how you run them, what urls to access to reach them, links to the download sites, to some doc...
+[2016-06-08 15:43:21] <priya_> okay, I will do it
+[2016-06-08 15:43:25] <jgbarah1> Thanks!
+[2016-06-08 15:43:32] <jgbarah1> What about #2?
+[2016-06-08 15:44:01] <priya_> That is also done... I have pushed the code to dashboard repository...
+[2016-06-08 15:44:08] <jgbarah1> I was looking at the testing code, and it seems there is only a single test
+[2016-06-08 15:44:23] <jgbarah1> But we can revisit that later, so let's do as follows:
+[2016-06-08 15:44:45] <jgbarah1> Just link the commit with the tests in your repo, and I close it afterwards
+[2016-06-08 15:44:47] <jgbarah1> ok?
+[2016-06-08 15:44:57] <priya_> ok fine
+[2016-06-08 15:45:03] <jgbarah1> We will have to revistir the tests later...
+[2016-06-08 15:45:10] <priya_> ok
+[2016-06-08 15:45:12] <jgbarah1> ok
+[2016-06-08 15:45:26] <jgbarah1> For #3, we already talked, everything clear?
+[2016-06-08 15:46:22] <jgbarah1> #4 can go after #3, I guess you're still stuck with it for the same reasons, right?'
+[2016-06-08 15:46:24] <priya_> yes now its clear.. But the thing is ..as I'm new to this... I am getting stuck with lots of errors if I do something small... 
+[2016-06-08 15:46:31] <priya_> That is why I'm late in finishing
+[2016-06-08 15:46:51] <priya_> My time is going in debugging
+[2016-06-08 15:46:56] <jgbarah1> No probblem about that, i already expected that. But please comment in the ticket, so that I can try to help
+[2016-06-08 15:47:24] <jgbarah1> in general, ,try to document what you're doing extensively
+[2016-06-08 15:47:42] <priya_> yes sometimes I think that this error is too small...so I should find it by myself and not to bother u ppl for small errors :(
+[2016-06-08 15:47:43] <jgbarah1> That way, we can follow your work easier, and try to help if needed
+[2016-06-08 15:47:57] <priya_> ok I will do it from now on
+[2016-06-08 15:48:01] <jgbarah1> In addition, it gets documented, and can be helpful for other people finding the same problems
+[2016-06-08 15:48:17] <priya_> ok I understand
+[2016-06-08 15:48:28] <jgbarah1> No problem with bothering. If I cannot find time for looking at it, I won't ;-)
+[2016-06-08 15:48:35] <jgbarah1> ok, good.
+[2016-06-08 15:48:49] <jgbarah1> I guess you couldn't start with other tickets, right?=
+[2016-06-08 15:49:16] <priya_> yeh... only if I get to figure this first task, I'll be able tod o the rest
+[2016-06-08 15:49:22] <priya_> So I'm stuck totally
+[2016-06-08 15:49:24] <jgbarah1> I added #7 and #8 which will come after #5
+[2016-06-08 15:49:39] <priya_> ok
+[2016-06-08 15:49:45] <jgbarah1> ok, let's try to work in these three directions for unstucking you ;-)
+[2016-06-08 15:50:05] <jgbarah1> if you cannot proceed, we can meet again on Friday
+[2016-06-08 15:50:27] <priya_> okay, that would be fine
+[2016-06-08 15:50:31] <jgbarah1> Let's try to work in the GH issues, and if needed, let's schedule that irc session for Friday
+[2016-06-08 15:51:13] <jgbarah1> ok, please start having a look at #7 and #8 anyway
+[2016-06-08 15:51:27] <jgbarah1> for #7, you can start working if you feel like that
+[2016-06-08 15:51:42] <jgbarah1> if you get tired for a while of fighting with #3 for example ;-)
+[2016-06-08 15:52:09] <jgbarah1> We have to fix #3, but meanwhile, you can try to advance in #7 too. Or at least start to get familiar with it.
+[2016-06-08 15:52:26] <priya_> also, i want to inform you one more thing.. I'm having my final reviews from 15th to 20th june... So I cannot decide on irc meetings during that time... The timings are not scheduled for my reviews
+[2016-06-08 15:52:35] <priya_> ok that would be fine I guess...  :)
+[2016-06-08 15:53:01] <jgbarah1> OK, that would affect to our meeting on 15, right?
+[2016-06-08 15:53:06] <priya_> yes
+[2016-06-08 15:53:10] <priya_> exactly
+[2016-06-08 15:53:11] <jgbarah1> We can move it to 14...
+[2016-06-08 15:53:16] <jgbarah1> Let me check...
+[2016-06-08 15:53:18] <priya_> ok, thanks
+[2016-06-08 15:53:37] <jgbarah1> I can at 14th at the same time. Is that right?
+[2016-06-08 15:53:43] <priya_> i would be busy during that time.... since its my final year project review :)
+[2016-06-08 15:53:48] <priya_> yeh
+[2016-06-08 15:53:51] <priya_> thats fine for me
+[2016-06-08 15:53:58] <priya_> thanks jgbarah
+[2016-06-08 15:54:12] <jgbarah1> ok, fine. Please inform lars_kurth about the change in date
+[2016-06-08 15:54:13] <jgbarah1> No problem
+[2016-06-08 15:54:26] <priya_> ok thanks alot :)
+[2016-06-08 15:55:16] <priya_> I'll mail regarding tha change in date to you both... 
+[2016-06-08 15:55:23] <jgbarah1> A final comment: please be a bit more descriptive in the weekly blog post. Where you are, why, last achivements, next actions...
+[2016-06-08 15:55:49] <jgbarah1> Not vry verbose, but a couple of paragraphs would help to learn how you're progressing
+[2016-06-08 15:55:54] <priya_> ohh okay... 
+[2016-06-08 15:56:04] <jgbarah1> Don't be afraid of writing about your problems. That's work as well.
+[2016-06-08 15:56:10] <priya_> oh okay.. so not to brief right?
+[2016-06-08 15:56:23] <priya_> ok... 
+[2016-06-08 15:56:59] <jgbarah1> Please write some text in the README.md of your github repo, describing the project
+[2016-06-08 15:57:13] <jgbarah1> You can  use the same text as in the proposaal, or better, summarize it and link to it
+[2016-06-08 15:57:26] <priya_> Oops sorry, I missed it... yes I'll add 
+[2016-06-08 15:57:36] <jgbarah1> From there, you can also link your blog, and any other relevant info youu may finnd conveneint
+[2016-06-08 15:57:39] <priya_> oh okay, I'll do it
+[2016-06-08 15:57:42] <jgbarah1> No problem.,
+[2016-06-08 15:57:56] <jgbarah1> If you want, open an issue for this too, so we don't forget.
+[2016-06-08 15:58:04] <jgbarah1> ok, that's all from my side, I guess
+[2016-06-08 15:58:09] <jgbarah1> anything else?
+[2016-06-08 15:58:36] <priya_> ok thanks jgbarah.. Nopes I've got what I need I guess :)
+[2016-06-08 15:58:44] <priya_> I'll work on it
+[2016-06-08 15:58:46] <jgbarah1> Good!
+[2016-06-08 15:58:54] <priya_> :)
+[2016-06-08 15:59:10] <jgbarah1> As usual, please get the log for this meeting, upload it, link from the blog post and all that ;-)
+[2016-06-08 15:59:38] <jgbarah1> See you! (on Friday if needed)
+[2016-06-08 16:00:00] <jgbarah1> Bye!
+[2016-06-08 16:00:27] <priya_> Yes yes I'll do... ok I'll let you know my progress...based on which we'll be able to decide whether we need a meeting on friday :)
+[2016-06-08 16:00:38] <priya_> I try to make it proper soon
+[2016-06-08 16:00:53] <priya_> Bye
