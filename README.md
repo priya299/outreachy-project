@@ -1,1 +1,1 @@
-# outreachy-project
+Write scripts to extract metainformation from mboxes and also the commit messages in git repositories using perceval. The output will be a json file. This json file is added as index to elasticsearch, which is used for storing and performing searches. Finally, these combined data are fed to Kibana to get the different kinds of visualizations. The detailed information regarding the project can be seen here. (https://outreachy.gnome.org/?q=attachment&prg=6&p=1091&i=938)
