@@ -1,0 +1,211 @@
+[2016-06-14 14:46:06] → Joined channel #metrics-grimoire
+[2016-06-14 14:46:06] * Channel mode is +cnt
+[2016-06-14 14:46:06] * Channel timestamp is 1349876710
+[2016-06-14 14:55:09] ⇐ jgbarah quit (~jgb@193.147.77.24): Ping timeout: 246 seconds
+[2016-06-14 15:02:09] → jgbarah joined (~jgb@193.147.77.24)
+[2016-06-14 15:02:29] <jgbarah> Hi, priya_ lars_kurth
+[2016-06-14 15:02:36] <lars_kurth> Hi
+[2016-06-14 15:02:52] <priya_> hi jgbarah and lars_kurth
+[2016-06-14 15:03:14] <jgbarah> Let's start?
+[2016-06-14 15:03:24] <priya_> yes 
+[2016-06-14 15:03:29] <lars_kurth> yes
+[2016-06-14 15:03:42] <jgbarah> ok. First of all, I have to apologize, priya_
+[2016-06-14 15:04:02] <jgbarah> I couldn't deal with https://github.com/priya299/outreachy-project/issues/9 until a moment ago
+[2016-06-14 15:04:24] <jgbarah> I didn't found where the problem was, and it was abosolutely stupid. But took some time :-(
+[2016-06-14 15:04:24] <priya_> that's fine. No issues :)
+[2016-06-14 15:04:37] <jgbarah> That's one of the reasons for using elasticsearch.py
+[2016-06-14 15:04:40] <priya_> But yeh I got stuck. Couldn't proceed
+[2016-06-14 15:04:50] <jgbarah> Now, when you can, pleas check if that solves it for you
+[2016-06-14 15:05:09] <priya_> yes sure. I'll do it soon. Thanks for the info
+[2016-06-14 15:05:22] <jgbarah> Another practical comment: please give me permission to close tickets (and probably lars_kurth too) in your repo
+[2016-06-14 15:05:47] <priya_> and about the log, I had added them few days back itself in my outreachy project repository and also had linked it in my blog post
+[2016-06-14 15:05:55] <jgbarah> And now, on the progress in general: I didn't see progress in other actions / tickets...
+[2016-06-14 15:06:03] <priya_> Yes I have given the invite now
+[2016-06-14 15:06:11] <priya_> Sorry, I forgot about that
+[2016-06-14 15:06:35] <jgbarah> priya_: Yes, I realized. But please either send a messsage to xen-devel, lars_kurth and me, with the link to the blog post,
+[2016-06-14 15:06:50] <jgbarah> or a summary, including the link to the meeting log
+[2016-06-14 15:07:11] <jgbarah> Otherwise, xen-devel is not informed, and lars_kurth and me have it a bit more difficult ;-)
+[2016-06-14 15:07:34] <jgbarah> What do you mean by the invite?
+[2016-06-14 15:08:14] <priya_> in collaborators I have added you and lars. And it shows awaiting response for the invite
+[2016-06-14 15:08:31] <jgbarah> Ah, ok thaks
+[2016-06-14 15:09:02] <lars_kurth> re progress, we should agree a protocol; either priya_ closing a ticket or suggesting it is closed and on eof us closing it
+[2016-06-14 15:09:12] <lars_kurth> yes, just accepted it
+[2016-06-14 15:09:27] <priya_> Oh no. I forgot about the mail. I'm sorry, I was running behind my review works. Really sorry 
+[2016-06-14 15:09:31] <jgbarah> Accepted
+[2016-06-14 15:09:43] <priya_> ok 
+[2016-06-14 15:10:10] <jgbarah> lars_kurth: I suggested that priya_ comments on the progress, and if needed says that she things the thing is done, and we close
+[2016-06-14 15:10:35] <jgbarah> And now I suggest too that if she asks for help, and we provide it, she decides if that's ok and closes then
+[2016-06-14 15:10:36] <priya_> ok I'll document and inform
+[2016-06-14 15:10:45] <jgbarah> In other words, the one "verifying" closes
+[2016-06-14 15:10:51] <jgbarah> Is that ok with you both?
+[2016-06-14 15:10:55] <priya_> ok that would befine
+[2016-06-14 15:10:58] <lars_kurth> works for me
+[2016-06-14 15:11:03] <jgbarah> ok
+[2016-06-14 15:11:18] <priya_> I have been going through issue 7
+[2016-06-14 15:11:24] <jgbarah> Can we go through the pending actions then?
+[2016-06-14 15:11:32] <priya_> The procedures in Readme.md
+[2016-06-14 15:11:36] <priya_> yeh
+[2016-06-14 15:11:44] <jgbarah> ok, priya_ We can start with #7
+[2016-06-14 15:12:23] <jgbarah> Do you want to comment on it?
+[2016-06-14 15:12:40] <jgbarah> And maybe summarize on other actions during the week?
+[2016-06-14 15:12:46] <priya_> yes.. yes
+[2016-06-14 15:12:54] <jgbarah> (Besides what we saw in the tickets)
+[2016-06-14 15:13:07] <jgbarah> ok, go ahead, please
+[2016-06-14 15:13:58] <priya_> I did not understand what we will be doing... with issue 7. I was going through readme.md
+[2016-06-14 15:14:23] <priya_> Since i got stuck with adding data to elasticsearch, I moved on to issue 7
+[2016-06-14 15:14:56] <jgbarah> ok. Let me start then.
+[2016-06-14 15:15:11] <priya_> ok
+[2016-06-14 15:15:44] <jgbarah> We can consider #1 and #2 closed. I'm closing them right now, btw
+[2016-06-14 15:15:51] <priya_> ok fine 
+[2016-06-14 15:16:48] <jgbarah> For #3 you  had your tests with curl, with sense, and with elasticsearc.py
+[2016-06-14 15:17:03] <priya_> yes right
+[2016-06-14 15:17:09] <jgbarah> For curl, I already mentioned above about #9
+[2016-06-14 15:17:16] <jgbarah> That should unblock you.
+[2016-06-14 15:17:22] <priya_> ok thank you
+[2016-06-14 15:17:40] <jgbarah> For sense, the problem is that you're using the same syntax than for curl, but that's not the case
+[2016-06-14 15:17:47] <jgbarah> please read about how sense is used
+[2016-06-14 15:17:53] <jgbarah> But in short, instead of
+[2016-06-14 15:18:42] <jgbarah> curl -XPOST http://0.0.0.0:9200/_bulk?pretty --data-binary "@data2.json"
+[2016-06-14 15:18:46] <priya_> In the documentation, they have showed an example by using the curl command for sense. And sense directly converts it to its syntax when pasted in it.
+[2016-06-14 15:18:50] <jgbarah> you have to just write
+[2016-06-14 15:18:59] <priya_> yeh exactly
+[2016-06-14 15:19:05] <priya_> I'm using that same command
+[2016-06-14 15:19:12] <jgbarah> POST /_bulk?pretty
+[2016-06-14 15:19:17] <jgbarah> and then the data
+[2016-06-14 15:19:21] <priya_> but when i put this command, I end up in errors
+[2016-06-14 15:19:28] <jgbarah> (the same data you would have in data2.json)
+[2016-06-14 15:19:47] <jgbarah> I see you try to write soemting like
+[2016-06-14 15:20:28] <jgbarah> POST /_bulk?pretty
+[2016-06-14 15:20:29] <jgbarah> and then
+[2016-06-14 15:20:37] <jgbarah> --data-binary "@data2.json"
+[2016-06-14 15:20:47] <jgbarah> But that doesn't have a meaining in sense
+[2016-06-14 15:20:47] <priya_> ok ok
+[2016-06-14 15:20:53] <jgbarah> Do you understand?
+[2016-06-14 15:21:31] <priya_> yes. So, I need to give the commands in sense itself
+[2016-06-14 15:21:40] <priya_> like what you have said jus now
+[2016-06-14 15:21:57] <jgbarah> First line is a regular HTTP POST comand
+[2016-06-14 15:22:18] <jgbarah> that is, "POST", then the resource name, like "/_bulk?pretty"
+[2016-06-14 15:22:33] <jgbarah> next lines are what should go in the body of the HTTP request,
+[2016-06-14 15:22:49] <jgbarah> in our case, the data you want to upload, in the format needed by the API you're using
+[2016-06-14 15:23:06] <jgbarah> That is, the contents of data2.json in the above example
+[2016-06-14 15:23:40] <priya_> ok, So there is no problem with my json output right?
+[2016-06-14 15:23:43] <jgbarah> And remember, ends of line have a meaning for the raw API, so you have to avoid them except where they are itended by the API
+[2016-06-14 15:24:34] <jgbarah> I didn't check all the JSON document you had, because end of line have to be fixed. But the error you had, I didn´ t had it once I removed those \n
+[2016-06-14 15:24:40] <jgbarah> That's explained in #11
+[2016-06-14 15:24:48] <priya_> ok ok
+[2016-06-14 15:24:58] <jgbarah> So, again for #3...
+[2016-06-14 15:25:07] <jgbarah> curl and sense should now be unblocked.
+[2016-06-14 15:25:22] <priya_> yeh ok. 
+[2016-06-14 15:25:26] <jgbarah> Next time you find an error like this, try to make it as minimal as possible, so it is easier to test
+[2016-06-14 15:25:36] <jgbarah> in the process, maybe you'll find thhe solution yourself
+[2016-06-14 15:25:44] <priya_> ohhh ok
+[2016-06-14 15:25:56] <jgbarah> And again  with #3, could you progress with elasticsearch.py ?
+[2016-06-14 15:26:34] <jgbarah> I guess that's #10, but I don't see any comment there...
+[2016-06-14 15:27:05] <priya_> No, I can't understand that too. I thought since sense and curl are similar, if I could do with sense,I thought that would be fine.
+[2016-06-14 15:28:02] <priya_> Like should I add the package in my code and then use its variables or something?
+[2016-06-14 15:28:20] <jgbarah> priya_: I guess we talked about this last meeting (briefly)
+[2016-06-14 15:28:34] <jgbarah> Now you're producing an output file directly with perceval
+[2016-06-14 15:28:41] <jgbarah> That's fine for testing.
+[2016-06-14 15:28:42] <priya_> I saw something like es.data something like that. 
+[2016-06-14 15:29:00] <jgbarah> Using curl and/or sense (rpobably both, to get the knowledge), you can upload it to Elasticsearch
+[2016-06-14 15:29:30] <jgbarah> But you have to produce a script that calls perceval as a library, and uploads the data to ElasticSearch
+[2016-06-14 15:29:56] <jgbarah> That's what it says exactly in the description of #3
+[2016-06-14 15:29:59] <priya_> oh ok.
+[2016-06-14 15:30:09] <jgbarah> "Write a script that uploads both the raw Perceval output on an mbox, and the threading info, to ElasticSearch."
+[2016-06-14 15:30:28] <jgbarah> So, in short, you need to write your own script, which will call Perceval when needed
+[2016-06-14 15:30:53] <jgbarah> The script will parse an mbox file, and will upload the results (Perceval output) to ElasticSearch,
+[2016-06-14 15:31:05] <jgbarah> For each message, it should produce a JSON document
+[2016-06-14 15:31:11] <jgbarah> (Perceval already does this)
+[2016-06-14 15:31:15] <priya_> I thought I need to get the output of perceval into a file and then add it t elasticsearch using curl commands. (By incorporating the curl command in my code itself rather than running in terminal separately)
+[2016-06-14 15:31:38] <jgbarah> In fact, from Perceval, you receive Python dictionaries that can be marshalled as JSON documents
+[2016-06-14 15:32:01] <jgbarah> priya_: That (uplaoding the file) is for testing, if you want to understand the process
+[2016-06-14 15:32:15] <jgbarah> But in the end, we need the script
+[2016-06-14 15:32:21] <jgbarah> #3 is for doing it for mbox
+[2016-06-14 15:32:32] <priya_> yeh ok
+[2016-06-14 15:32:39] <jgbarah> #4 is for doing it for git
+[2016-06-14 15:32:46] <priya_> yes
+[2016-06-14 15:32:50] <jgbarah> Do you think you understand now?
+[2016-06-14 15:33:16] <priya_> yes I guess so. I need to do it. 
+[2016-06-14 15:33:23] <jgbarah> Please ask if you still have any shade about what needs to be done..
+[2016-06-14 15:33:39] <jgbarah> ok. Then, go ahead, and comment in the tickets if you have further problems.
+[2016-06-14 15:33:55] <jgbarah> And here is where the leasticsearch.py library will be your friend
+[2016-06-14 15:34:00] <priya_> As of now ok. But the thing is, I get a total picture, but when I start with, I face issues
+[2016-06-14 15:34:08] <priya_> ohk
+[2016-06-14 15:34:17] <jgbarah> Your script will be getting from Perceval one Python dictionary per message
+[2016-06-14 15:34:35] <jgbarah> using elasticsearch.py, you should easily upload it to ElasticSearch
+[2016-06-14 15:34:47] <priya_> ohkk. 
+[2016-06-14 15:34:48] <jgbarah> Of course you can do it directly ising the raw interface as well
+[2016-06-14 15:35:18] <priya_> ok
+[2016-06-14 15:35:20] <jgbarah> In fact, you can use the raw ES API by using elasticsearch.py too
+[2016-06-14 15:35:29] <jgbarah> OK, let's reca
+[2016-06-14 15:35:58] <jgbarah> Then you firs try to completely understand how to upload documents with curl and sense, whcih will help you for testing
+[2016-06-14 15:36:07] <jgbarah> ...and learning about the ES API
+[2016-06-14 15:36:09] <priya_> oh ok
+[2016-06-14 15:36:30] <jgbarah> Please, go through #9 and #11 and close them if the thin works
+[2016-06-14 15:36:41] <jgbarah> But before that, comment how you could make it work
+[2016-06-14 15:36:48] <priya_> ok, once I'm done with it, I'll close the issue
+[2016-06-14 15:36:59] <priya_> ohh ok
+[2016-06-14 15:37:02] <jgbarah> Yes, please
+[2016-06-14 15:37:29] <jgbarah> Then do some simple test script of elasticsearch.py, just to learn how to use it
+[2016-06-14 15:37:40] <jgbarah> Please document that in #10
+[2016-06-14 15:37:43] <priya_> ok
+[2016-06-14 15:37:50] <jgbarah> And then proceed with #3 and #4
+[2016-06-14 15:37:53] <jgbarah> ok?
+[2016-06-14 15:38:49] <priya_> ok. From this week, i was running behing my review works and submissions. As I had mentioned, from tommorrow, my reviews are starting. So, thats why I'm lagging behind.
+[2016-06-14 15:38:53] <priya_> I apologize for it
+[2016-06-14 15:39:13] <jgbarah> ok, now we talk about that. Don't worry, but let's try to fix that
+[2016-06-14 15:39:19] <jgbarah> (and recover the time ;-) )
+[2016-06-14 15:39:25] <priya_> ok
+[2016-06-14 15:39:31] <priya_> sure
+[2016-06-14 15:39:44] <jgbarah> Well, after #3 and #4 are done, you can deal with #8
+[2016-06-14 15:40:09] <priya_> ok matching script
+[2016-06-14 15:40:19] <jgbarah> In parallel, please give some love to #12 (improving the README.md  in your repo)
+[2016-06-14 15:40:46] <priya_> yes, I saw your comment. I thought I should brief and not elaborate on it much
+[2016-06-14 15:40:54] <priya_> ok I'll add in detail
+[2016-06-14 15:40:58] <jgbarah> No, #8 is about documenting the process (incljding scripts) to get data from mbox and git into ES
+[2016-06-14 15:41:04] <jgbarah> And doint that upstream
+[2016-06-14 15:41:11] <priya_> oh okok
+[2016-06-14 15:41:41] <jgbarah> And then we have #7. For now, it is only that you go through the scripts, and you comment in the ticket what you understand and what you don't
+[2016-06-14 15:41:57] <jgbarah> So, again the complete plan would be:
+[2016-06-14 15:42:22] <jgbarah> Finish with curl and sense, and test elasticsearch.py (#9, #10, #11)
+[2016-06-14 15:42:53] <jgbarah> Then, scripts for uploading mboxes and git repos metadata to ElasticSearch (#3 and #4)
+[2016-06-14 15:43:04] <jgbarah> Then, document that upstream, #8
+[2016-06-14 15:43:16] <jgbarah> In parallell, improve READM.md #12
+[2016-06-14 15:43:34] <jgbarah> Inn parallel, start learning about the scripts etc. that you will replace, #7
+[2016-06-14 15:43:42] <jgbarah> Does that sounds like a plan?'
+[2016-06-14 15:43:48] <priya_> yes ok
+[2016-06-14 15:44:02] <jgbarah> Good!
+[2016-06-14 15:44:18] <priya_> thanks
+[2016-06-14 15:44:20] <jgbarah> Anything else about problems you may have, or schedule for the next week?'
+[2016-06-14 15:44:50] <lars_kurth> Am happy with it also: apologies for not contributing much today - too much technical detail for me
+[2016-06-14 15:45:07] <jgbarah> ok, lars_kurth, no problem ;-)
+[2016-06-14 15:45:08] <priya_> about the schedule, my reviews will be going on from 15th to 20th
+[2016-06-14 15:45:24] <jgbarah> That means that you cannot work during those days, right?
+[2016-06-14 15:45:33] <priya_> after that all my college works are over
+[2016-06-14 15:45:43] <priya_> yeh, but not totally
+[2016-06-14 15:46:07] <jgbarah> ok, I see.
+[2016-06-14 15:46:29] <jgbarah> What about moving the next meeting to Thursday, and then you have some more time to recover time?
+[2016-06-14 15:46:40] <jgbarah> I mean Thursday next week9
+[2016-06-14 15:46:55] <priya_> ok, thanks alot
+[2016-06-14 15:47:06] <jgbarah> lars_kurth: that does work for you?
+[2016-06-14 15:47:32] <lars_kurth> I can't do Thursday, but as it seems to be the case you don't need me
+[2016-06-14 15:48:44] <lars_kurth> Should I reschedule the meeting?
+[2016-06-14 15:49:10] <jgbarah> ok, lars_kurth, if you don't mind, priya_ and me can meet on thursday, and then we all sync the week after
+[2016-06-14 15:49:11] <lars_kurth> From the 22 -> 23 same time?
+[2016-06-14 15:49:24] <jgbarah> Yes, from my side... priya_??
+[2016-06-14 15:49:58] <priya_> 23rd is wednesday right?ok i guess
+[2016-06-14 15:50:43] <lars_kurth> Thu: so you have one more day (we moved today's meeting from Wed to Tue)
+[2016-06-14 15:50:48] <jgbarah> Good. 23, at 11:30 CEST, 10:30 BST, and I guess... 17:00 IST, s¡right?
+[2016-06-14 15:51:37] <lars_kurth> Invite updated
+[2016-06-14 15:52:00] <jgbarah> Thanks, lars_kurth
+[2016-06-14 15:52:09] <jgbarah> Anything else, lars_kurth, priya_ ?
+[2016-06-14 15:52:25] <lars_kurth> No: Thank ypu
+[2016-06-14 15:52:33] <priya_> No, I'm fine with the schedule :)
+[2016-06-14 15:52:38] <priya_> thanks
+[2016-06-14 15:52:39] <jgbarah> priya_: Have some nice reviews!
+[2016-06-14 15:52:44] <jgbarah> See you!
+[2016-06-14 15:52:48] <lars_kurth> Good luck from me also
+[2016-06-14 15:52:55] <priya_> Thank you
+[2016-06-14 15:53:19] <jgbarah> ( priya_ please remember to upload the log of this meeting, produce the entry for the blog, and send the link to xen-devel, please)
+[2016-06-14 15:54:01] <priya_> yes yes I'll do it. Last time I forgot to mail. This tym i'll mail including last week's blog post too
+[2016-06-14 15:54:30] <jgbarah> Good!
